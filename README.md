@@ -13,7 +13,7 @@
   <a href="https://pypi.org/project/locketlam/"><img src="https://img.shields.io/pypi/pyversions/locketlam.svg?style=flat-square" alt="Python Versions"></a>
   <a href="https://github.com/leanhminh2104/locketlam/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License MIT"></a>
   <a href="https://pepy.tech/project/locketlam"><img src="https://img.shields.io/pypi/dm/locketlam.svg?style=flat-square" alt="Downloads"></a>
-  <a href="README_VI.md"><img src="https://img.shields.io/badge/Language-Vietnamese-red.svg?style=flat-square" alt="Vietnamese Docs"></a>
+  <a href="https://github.com/leanhminh2104/locketlam/blob/main/README_VI.md"><img src="https://img.shields.io/badge/Language-Vietnamese-red.svg?style=flat-square" alt="Vietnamese Docs"></a>
 </p>
 
 ---
@@ -25,10 +25,10 @@
 | If you want to... | Go to |
 |:---|:---|
 | 🚀 **Install & run your first snippet** | You're in the right place — see [Quick Start](#-quick-start) below |
-| 🛠️ **Integrate into your project step by step** | ➡️ [INTEGRATION.md](docs/INTEGRATION.md) (EN) · [INTEGRATION_VI.md](docs/INTEGRATION_VI.md) (VI) |
-| 📚 **Look up a specific method / parameter** | ➡️ [FEATURES.md](docs/FEATURES.md) (EN) · [FEATURES_VI.md](docs/FEATURES_VI.md) (VI) |
-| 💡 **Copy-paste complete working scripts** | ➡️ [examples/en/](examples/en/) (EN) · [examples/vi/](examples/vi/) (VI) |
-| 🇬🇧 **Read this page in Vietnamese** | ➡️ [README_VI.md](README_VI.md) |
+| 🛠️ **Integrate into your project step by step** | ➡️ [INTEGRATION.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION.md) (EN) · [INTEGRATION_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION_VI.md) (VI) |
+| 📚 **Look up a specific method / parameter** | ➡️ [FEATURES.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES.md) (EN) · [FEATURES_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES_VI.md) (VI) |
+| 💡 **Copy-paste complete working scripts** | ➡️ [examples/en/](https://github.com/leanhminh2104/locketlam/tree/main/examples/en/) (EN) · [examples/vi/](https://github.com/leanhminh2104/locketlam/tree/main/examples/vi/) (VI) |
+| 🇬🇧 **Read this page in Vietnamese** | ➡️ [README_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/README_VI.md) |
 
 ---
 
@@ -385,25 +385,25 @@ except LocketError as e:
 
 ## 💡 Examples
 
-The [`examples/`](examples/) directory contains complete, runnable scripts for every feature:
+The [`examples/`](https://github.com/leanhminh2104/locketlam/tree/main/examples/) directory contains complete, runnable scripts for every feature:
 
 | Feature | Script |
 |:---|:---|
-| Login & Session | [`examples/en/01_login_and_session.py`](examples/en/01_login_and_session.py) |
-| User Profile | [`examples/en/02_user_profile.py`](examples/en/02_user_profile.py) |
-| Post Photo & NoteType | [`examples/en/03_post_image_moment.py`](examples/en/03_post_image_moment.py) |
-| Post Video & HEVC | [`examples/en/04_post_video_moment.py`](examples/en/04_post_video_moment.py) |
-| Feed & Reactions | [`examples/en/05_feed_views_reactions.py`](examples/en/05_feed_views_reactions.py) |
-| Friends & Contacts | [`examples/en/06_friends_and_contacts.py`](examples/en/06_friends_and_contacts.py) |
-| Chat & Real-Time | [`examples/en/07_chat_and_reactions.py`](examples/en/07_chat_and_reactions.py) |
-| Interactive CLI | [`examples/en/interactive_demo.py`](examples/en/interactive_demo.py) |
+| Login & Session | [`examples/en/01_login_and_session.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/01_login_and_session.py) |
+| User Profile | [`examples/en/02_user_profile.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/02_user_profile.py) |
+| Post Photo & NoteType | [`examples/en/03_post_image_moment.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/03_post_image_moment.py) |
+| Post Video & HEVC | [`examples/en/04_post_video_moment.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/04_post_video_moment.py) |
+| Feed & Reactions | [`examples/en/05_feed_views_reactions.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/05_feed_views_reactions.py) |
+| Friends & Contacts | [`examples/en/06_friends_and_contacts.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/06_friends_and_contacts.py) |
+| Chat & Real-Time | [`examples/en/07_chat_and_reactions.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/07_chat_and_reactions.py) |
+| Interactive CLI | [`examples/en/interactive_demo.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/en/interactive_demo.py) |
 
 ```bash
 python examples/en/interactive_demo.py
 ```
 
-> 📖 For a full step-by-step integration guide, see [`docs/INTEGRATION.md`](docs/INTEGRATION.md).
-> 📋 For the complete API catalog, see [`docs/FEATURES.md`](docs/FEATURES.md).
+> 📖 For a full step-by-step integration guide, see [`docs/INTEGRATION.md`](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION.md).
+> 📋 For the complete API catalog, see [`docs/FEATURES.md`](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES.md).
 
 ---
 
@@ -411,12 +411,12 @@ python examples/en/interactive_demo.py
 
 | Document | Description |
 |:---|:---|
-| [📘 docs/INTEGRATION.md](docs/INTEGRATION.md) | Step-by-step integration guide with real code snippets for every feature (EN - Primary) |
-| [📘 docs/INTEGRATION_VI.md](docs/INTEGRATION_VI.md) | Step-by-step integration guide in Vietnamese (VI - Secondary) |
-| [📋 docs/FEATURES.md](docs/FEATURES.md) | Full API catalog — all classes, methods and parameters (EN) |
-| [📋 docs/FEATURES_VI.md](docs/FEATURES_VI.md) | Full API catalog in Vietnamese (VI) |
-| [💡 examples/en/](examples/en/) | 8 complete runnable example scripts (English) |
-| [💡 examples/vi/](examples/vi/) | 8 complete runnable example scripts (Vietnamese) |
+| [📘 docs/INTEGRATION.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION.md) | Step-by-step integration guide with real code snippets for every feature (EN - Primary) |
+| [📘 docs/INTEGRATION_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION_VI.md) | Step-by-step integration guide in Vietnamese (VI - Secondary) |
+| [📋 docs/FEATURES.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES.md) | Full API catalog — all classes, methods and parameters (EN) |
+| [📋 docs/FEATURES_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES_VI.md) | Full API catalog in Vietnamese (VI) |
+| [💡 examples/en/](https://github.com/leanhminh2104/locketlam/tree/main/examples/en/) | 8 complete runnable example scripts (English) |
+| [💡 examples/vi/](https://github.com/leanhminh2104/locketlam/tree/main/examples/vi/) | 8 complete runnable example scripts (Vietnamese) |
 
 ---
 

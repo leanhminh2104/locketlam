@@ -10,7 +10,7 @@
 | 💡 **Complete runnable scripts** | ➡️ [examples/en/](../examples/en/) (EN) · [examples/vi/](../examples/vi/) (VI) |
 | 🇻🇳 **Vietnamese version of this catalog** | ➡️ [FEATURES_VI.md](FEATURES_VI.md) |
 
-> **Version**: 1.0.1 · **Package**: [locketlam](https://pypi.org/project/locketlam/) · **Author**: LAMDev x DaLyMMO.com · **License**: MIT
+> **Version**: 1.0.2 · **Package**: [locketlam](https://pypi.org/project/locketlam/) · **Author**: LAMDev x DaLyMMO.com · **License**: MIT
 
 ---
 

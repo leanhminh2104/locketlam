@@ -10,7 +10,7 @@
 | 💡 **Script mẫu chạy được ngay** | ➡️ [examples/vi/](../examples/vi/) (VI) · [examples/en/](../examples/en/) (EN) |
 | 🇬🇧 **Bản tiếng Anh (Bản chính)** | ➡️ [FEATURES.md](FEATURES.md) |
 
-> **Phiên bản**: 1.0.1 · **Gói PyPI**: [locketlam](https://pypi.org/project/locketlam/) · **Tác giả**: LAMDev x DaLyMMO.com · **Giấy phép**: MIT
+> **Phiên bản**: 1.0.2 · **Gói PyPI**: [locketlam](https://pypi.org/project/locketlam/) · **Tác giả**: LAMDev x DaLyMMO.com · **Giấy phép**: MIT
 
 ---
 

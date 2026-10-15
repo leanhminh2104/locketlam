@@ -12,7 +12,7 @@
   <a href="https://pypi.org/project/locketlam/"><img src="https://img.shields.io/pypi/v/locketlam.svg?style=flat-square&color=blue" alt="PyPI Version"></a>
   <a href="https://pypi.org/project/locketlam/"><img src="https://img.shields.io/pypi/pyversions/locketlam.svg?style=flat-square" alt="Python Versions"></a>
   <a href="https://github.com/leanhminh2104/locketlam/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License MIT"></a>
-  <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue.svg?style=flat-square" alt="English Docs"></a>
+  <a href="https://github.com/leanhminh2104/locketlam/blob/main/README.md"><img src="https://img.shields.io/badge/Language-English-blue.svg?style=flat-square" alt="English Docs"></a>
 </p>
 
 ---
@@ -24,10 +24,10 @@
 | Bạn muốn... | Đi đến |
 |:---|:---|
 | 🚀 **Cài đặt và chạy thử nhanh** | Đúng chỗ rồi — xem [Khởi Đầu Nhanh](#-khởi-đầu-nhanh) bên dưới |
-| 🛠️ **Tích hợp vào dự án của mình từng bước** | ➡️ [INTEGRATION_VI.md](docs/INTEGRATION_VI.md) (VI) · [INTEGRATION.md](docs/INTEGRATION.md) (EN) |
-| 📚 **Tra cứu method, tham số cụ thể** | ➡️ [FEATURES_VI.md](docs/FEATURES_VI.md) (VI) · [FEATURES.md](docs/FEATURES.md) (EN) |
-| 💡 **Xem code mẫu chạy được ngay** | ➡️ [examples/vi/](examples/vi/) — 8 script hoàn chỉnh theo từng tính năng |
-| 🇬🇧 **Đọc trang này bằng tiếng Anh** | ➡️ [README.md](README.md) |
+| 🛠️ **Tích hợp vào dự án của mình từng bước** | ➡️ [INTEGRATION_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION_VI.md) (VI) · [INTEGRATION.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION.md) (EN) |
+| 📚 **Tra cứu method, tham số cụ thể** | ➡️ [FEATURES_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES_VI.md) (VI) · [FEATURES.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES.md) (EN) |
+| 💡 **Xem code mẫu chạy được ngay** | ➡️ [examples/vi/](https://github.com/leanhminh2104/locketlam/tree/main/examples/vi/) — 8 script hoàn chỉnh theo từng tính năng |
+| 🇬🇧 **Đọc trang này bằng tiếng Anh** | ➡️ [README.md](https://github.com/leanhminh2104/locketlam/blob/main/README.md) |
 
 ---
 
@@ -247,25 +247,25 @@ except LocketError as e:
 
 ## 💡 Ví Dụ Mẫu (Examples)
 
-Thư mục [`examples/`](examples/) cung cấp các script hoàn chỉnh, chạy được ngay cho từng tính năng:
+Thư mục [`examples/`](https://github.com/leanhminh2104/locketlam/tree/main/examples/) cung cấp các script hoàn chỉnh, chạy được ngay cho từng tính năng:
 
 | Tính Năng | Script |
 |:---|:---|
-| Đăng nhập & Session | [`examples/vi/01_login_and_session.py`](examples/vi/01_login_and_session.py) |
-| Hồ sơ người dùng | [`examples/vi/02_user_profile.py`](examples/vi/02_user_profile.py) |
-| Đăng ảnh & NoteType | [`examples/vi/03_post_image_moment.py`](examples/vi/03_post_image_moment.py) |
-| Đăng video & HEVC | [`examples/vi/04_post_video_moment.py`](examples/vi/04_post_video_moment.py) |
-| Feed & Tương tác | [`examples/vi/05_feed_views_reactions.py`](examples/vi/05_feed_views_reactions.py) |
-| Bạn bè & Kết bạn | [`examples/vi/06_friends_and_contacts.py`](examples/vi/06_friends_and_contacts.py) |
-| Nhắn tin & Real-Time | [`examples/vi/07_chat_and_reactions.py`](examples/vi/07_chat_and_reactions.py) |
-| Menu CLI tương tác | [`examples/vi/interactive_demo.py`](examples/vi/interactive_demo.py) |
+| Đăng nhập & Session | [`examples/vi/01_login_and_session.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/01_login_and_session.py) |
+| Hồ sơ người dùng | [`examples/vi/02_user_profile.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/02_user_profile.py) |
+| Đăng ảnh & NoteType | [`examples/vi/03_post_image_moment.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/03_post_image_moment.py) |
+| Đăng video & HEVC | [`examples/vi/04_post_video_moment.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/04_post_video_moment.py) |
+| Feed & Tương tác | [`examples/vi/05_feed_views_reactions.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/05_feed_views_reactions.py) |
+| Bạn bè & Kết bạn | [`examples/vi/06_friends_and_contacts.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/06_friends_and_contacts.py) |
+| Nhắn tin & Real-Time | [`examples/vi/07_chat_and_reactions.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/07_chat_and_reactions.py) |
+| Menu CLI tương tác | [`examples/vi/interactive_demo.py`](https://github.com/leanhminh2104/locketlam/blob/main/examples/vi/interactive_demo.py) |
 
 ```bash
 python examples/vi/interactive_demo.py
 ```
 
-> 📖 Xem hướng dẫn tích hợp chi tiết: [`docs/INTEGRATION_VI.md`](docs/INTEGRATION_VI.md)
-> 📋 Xem toàn bộ API catalog: [`docs/FEATURES_VI.md`](docs/FEATURES_VI.md)
+> 📖 Xem hướng dẫn tích hợp chi tiết: [`docs/INTEGRATION_VI.md`](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION_VI.md)
+> 📋 Xem toàn bộ API catalog: [`docs/FEATURES_VI.md`](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES_VI.md)
 
 ---
 
@@ -273,12 +273,12 @@ python examples/vi/interactive_demo.py
 
 | Tài liệu | Nội dung |
 |:---|:---|
-| [📘 docs/INTEGRATION.md](docs/INTEGRATION.md) | Hướng dẫn tích hợp từng bước kèm code mẫu chi tiết (Bản chính - EN) |
-| [📘 docs/INTEGRATION_VI.md](docs/INTEGRATION_VI.md) | Hướng dẫn tích hợp từng bước kèm code mẫu chi tiết (Bản phụ - VI) |
-| [📋 docs/FEATURES.md](docs/FEATURES.md) | Danh mục API đầy đủ — toàn bộ lớp, phương thức và tham số (EN) |
-| [📋 docs/FEATURES_VI.md](docs/FEATURES_VI.md) | Danh mục API đầy đủ — toàn bộ lớp, phương thức và tham số (VI) |
-| [💡 examples/vi/](examples/vi/) | 8 script mẫu chạy được ngay theo từng tính năng (Tiếng Việt) |
-| [💡 examples/en/](examples/en/) | 8 example scripts (English) |
+| [📘 docs/INTEGRATION.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION.md) | Hướng dẫn tích hợp từng bước kèm code mẫu chi tiết (Bản chính - EN) |
+| [📘 docs/INTEGRATION_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/INTEGRATION_VI.md) | Hướng dẫn tích hợp từng bước kèm code mẫu chi tiết (Bản phụ - VI) |
+| [📋 docs/FEATURES.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES.md) | Danh mục API đầy đủ — toàn bộ lớp, phương thức và tham số (EN) |
+| [📋 docs/FEATURES_VI.md](https://github.com/leanhminh2104/locketlam/blob/main/docs/FEATURES_VI.md) | Danh mục API đầy đủ — toàn bộ lớp, phương thức và tham số (VI) |
+| [💡 examples/vi/](https://github.com/leanhminh2104/locketlam/tree/main/examples/vi/) | 8 script mẫu chạy được ngay theo từng tính năng (Tiếng Việt) |
+| [💡 examples/en/](https://github.com/leanhminh2104/locketlam/tree/main/examples/en/) | 8 example scripts (English) |
 
 ---
 
@@ -318,7 +318,7 @@ Nếu thư viện **`locketlam`** hữu ích cho các dự án hoặc nghiên c�
 
 Bản quyền © 2026 **LAMDev x DaLyMMO.com**.
 
-Phát hành theo giấy phép **MIT License**. Xem file [`LICENSE`](LICENSE) để biết thêm chi tiết.
+Phát hành theo giấy phép **MIT License**. Xem file [`LICENSE`](https://github.com/leanhminh2104/locketlam/blob/main/LICENSE) để biết thêm chi tiết.
 
 ---
 
