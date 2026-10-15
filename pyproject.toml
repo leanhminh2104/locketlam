@@ -1,0 +1,47 @@
+﻿[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "locketlam"
+version = "1.0.0"
+description = "Unofficial Python API client for Locket Camera with full iOS device emulation. Developed by LAMDev x DaLyMMO.com"
+readme = "README.md"
+authors = [
+    { name = "LAMDev x DaLyMMO.com", email = "lamdev2104@gmail.com" }
+]
+license = "MIT"
+requires-python = ">=3.8"
+keywords = ["locket", "locket-camera", "locket-api", "locketlam", "ios-client", "reverse-engineered"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "requests>=2.28.0",
+    "websockets>=11.0",
+    "pillow>=9.0.0",
+    "imageio-ffmpeg>=0.4.8"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/leanhminh2104/locketlam"
+"Bug Tracker" = "https://github.com/leanhminh2104/locketlam/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["locketlam*"]
+exclude = ["tests*", "__pycache__*"]
+
+[tool.setuptools.package-data]
+locketlam = ["*.json"]
