@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "locketlam"
-version = "1.0.0"
+version = "1.0.1"
 description = "Unofficial Python API client for Locket Camera with full iOS device emulation. Developed by LAMDev x DaLyMMO.com"
 readme = "README.md"
 authors = [

@@ -1,4 +1,4 @@
-# 📋 LocketLam — Full API Catalog
+﻿# 📋 LocketLam — Full API Catalog
 
 > **What is this file for?**
 > This is the **API reference** — a complete catalog of every class, method, parameter and return type in locketlam. Read this file when you need to **look up a specific method name, what parameters it takes, or what it returns**.
@@ -10,7 +10,7 @@
 | 💡 **Complete runnable scripts** | ➡️ [examples/en/](../examples/en/) (EN) · [examples/vi/](../examples/vi/) (VI) |
 | 🇻🇳 **Vietnamese version of this catalog** | ➡️ [FEATURES_VI.md](FEATURES_VI.md) |
 
-> **Version**: 1.0.0 · **Package**: [locketlam](https://pypi.org/project/locketlam/) · **Author**: LAMDev x DaLyMMO.com · **License**: MIT
+> **Version**: 1.0.1 · **Package**: [locketlam](https://pypi.org/project/locketlam/) · **Author**: LAMDev x DaLyMMO.com · **License**: MIT
 
 ---
 

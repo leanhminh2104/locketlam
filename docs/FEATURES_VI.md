@@ -1,4 +1,4 @@
-# 📋 LocketLam — Danh Mục API Đầy Đủ (Tiếng Việt)
+﻿# 📋 LocketLam — Danh Mục API Đầy Đủ (Tiếng Việt)
 
 > **File này dùng để làm gì?**
 > Đây là tài liệu **tra cứu API** — liệt kê toàn bộ các lớp, phương thức, tham số và kiểu dữ liệu trong locketlam. Đọc file này khi bạn cần **tra cứu tên một phương thức, tham số truyền vào là gì, kiểu trả về** ra sao.
@@ -10,7 +10,7 @@
 | 💡 **Script mẫu chạy được ngay** | ➡️ [examples/vi/](../examples/vi/) (VI) · [examples/en/](../examples/en/) (EN) |
 | 🇬🇧 **Bản tiếng Anh (Bản chính)** | ➡️ [FEATURES.md](FEATURES.md) |
 
-> **Phiên bản**: 1.0.0 · **Gói PyPI**: [locketlam](https://pypi.org/project/locketlam/) · **Tác giả**: LAMDev x DaLyMMO.com · **Giấy phép**: MIT
+> **Phiên bản**: 1.0.1 · **Gói PyPI**: [locketlam](https://pypi.org/project/locketlam/) · **Tác giả**: LAMDev x DaLyMMO.com · **Giấy phép**: MIT
 
 ---
 

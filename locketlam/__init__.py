@@ -1,4 +1,4 @@
-"""
+﻿"""
 locketlam - Unofficial Python API SDK for Locket Camera.
 Author: LAMDev x DaLyMMO.com
 """
@@ -15,7 +15,7 @@ from .exceptions import (
     StorageUploadError
 )
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __all__ = [
     "LocketClient",
     "DeviceProfile",
