@@ -1,7 +1,7 @@
 ﻿# 🚀 LocketLam - The Ultimate Python SDK for Locket Camera
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/leanhminh2104/locketlam/main/assets/banner.PNG" alt="LocketLam Banner" width="700" onerror="this.style.display='none'"/>
+  <img src="https://raw.githubusercontent.com/leanhminh2104/locketlam/main/assets/banner.png" alt="LocketLam Banner" width="700" onerror="this.style.display='none'"/>
 </p>
 
 <p align="center">
