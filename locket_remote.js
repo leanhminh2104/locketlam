@@ -375,11 +375,69 @@ if (ua.includes("Locket")) {
         music_caption_song_preview_enabled: "true",
         link_caption_link_enabled: "true",
         overlay_dynamic_captions: JSON.stringify([
+            "lamdev_vip", "dalymmo_official", "locketlam_gold", "lamdev_whale",
             "standard", "poll", "color_palette", "review", "music", "location",
             "weather", "time", "streak", "star_sign", "party_time", "locket_count",
             "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026"
         ]),
         overlay_items: JSON.stringify([
+            {
+                section: "👑 Độc Quyền LAMDev",
+                items: [
+                    {
+                        overlay_id: "caption:lamdev_vip",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#0052D4", "#4364F7", "#6FB1FC"] },
+                            icon: { data: "👑", type: "emoji" },
+                            max_lines: 1,
+                            text: "LAMDev VIP",
+                            localized_text: { en: "LAMDev VIP 👑", vn: "LAMDev VIP 👑" },
+                            text_color: "#FFFFFF",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:dalymmo_official",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#0F2027", "#203A43", "#2C5364"] },
+                            icon: { data: "🌐", type: "emoji" },
+                            max_lines: 1,
+                            text: "DaLyMMo.COM",
+                            localized_text: { en: "DaLyMMo.COM ⚡", vn: "DaLyMMo.COM ⚡" },
+                            text_color: "#00E5FF",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:locketlam_gold",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#FFD700", "#FFA500"] },
+                            icon: { data: "💛", type: "emoji" },
+                            max_lines: 1,
+                            text: "LocketLAM Gold",
+                            localized_text: { en: "LocketLAM Gold 💛", vn: "LocketLAM Gold 💛" },
+                            text_color: "#1A1A1A",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:lamdev_whale",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#0A192F", "#172A45", "#304D6D"] },
+                            icon: { data: "🐳", type: "emoji" },
+                            max_lines: 1,
+                            text: "Bug là tính năng",
+                            localized_text: { en: "Bug là tính năng 🐳", vn: "Bug là tính năng 🐳" },
+                            text_color: "#64FFDA",
+                            type: "static_content"
+                        }
+                    }
+                ]
+            },
             {
                 section: "🎨 General",
                 items: [
