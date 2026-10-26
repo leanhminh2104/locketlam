@@ -26,21 +26,21 @@ var lamdev = {
     "amount": 399000.0,
     "currency": "VND"
   },
-  expires_date: "9999-01-09T10:10:14Z",
+  expires_date: "3000-04-21T00:00:00Z",
   grace_period_expires_date: null,
   refunded_at: null,
   unsubscribe_detected_at: null,
-  original_purchase_date: "2024-01-01T00:00:00Z",
-  purchase_date: "2024-01-01T00:00:00Z",
+  original_purchase_date: "2006-04-21T00:00:00Z",
+  purchase_date: "2026-04-21T00:00:00Z",
   store: "app_store",
   store_transaction_id: "2000001108724193"
 };
 
 var locketGold = {
   grace_period_expires_date: null,
-  purchase_date: "2024-01-01T00:00:00Z",
+  purchase_date: "2026-04-21T00:00:00Z",
   product_identifier: "locket_1600_1y",
-  expires_date: "9999-01-09T10:10:14Z"
+  expires_date: "3000-04-21T00:00:00Z"
 };
 
 const match = Object.keys(mapping).find(e => ua.includes(e));

@@ -56,20 +56,30 @@ if (ua.includes("Locket")) {
                 {
                     title: "Locket Gold VIP - LAMDev ✨",
                     body: "Đã kích hoạt thành công Locket Gold VIP 💛",
-                    imageURL: "https://i.ibb.co/gZ6HkyWT/L-n-Gold-R-i.png"
+                    imageURL: "https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/assets/welcome_banner.png"
                 }
             ],
             primary_button_title: "Xong",
             campaign: "locket_gold_welcome_v3",
             start_at: "2020-01-01T00:00:00",
-            end_at: "2099-12-31T23:59:59",
+            end_at: "3000-12-31T23:59:59",
             use_local_time_zone: true
         }),
-        android_subscribe_gold_button_enabled: "false",
         profile_badge_visible: "true",
+        beta_features_enabled: "true",
+        link_caption_link_enabled: "true",
+        music_caption_enabled: "true",
+        music_caption_song_preview_enabled: "true",
+        unsend_message_enabled: "true",
         lunar_new_year_app_icon_enabled: "true",
-        settings_instagram_url: "https://dalymmo.com",
-        settings_tiktok_url: "https://t.me/dalymmo"
+        year_of_the_horse_icon_enabled: "true",
+        settings_instagram_url: "https://instagram.com/leanminh2104",
+        settings_tiktok_url: "https://www.tiktok.com/@leanhminh2104",
+        settings_twitter_url: "https://dalymmo.com",
+        help_center_url: "https://locketlam.dalymmo.com/help",
+        safety_center_url: "https://locketlam.dalymmo.com/safety",
+        parent_center_url: "https://locketlam.dalymmo.com",
+        rewarded_referral_rule_url: "https://locketlam.dalymmo.com/aff"
     });
 
     // ============================================================
@@ -243,7 +253,7 @@ if (ua.includes("Locket")) {
         streak.minimum_recovery_count = 0;
         streak.minimum_display_count = 0;
         obj.entries.streak_config = JSON.stringify(streak);
-    } catch (e) {}
+    } catch (e) { }
 
     Object.assign(obj.entries, {
         moment_views_enabled: "true",
@@ -391,8 +401,8 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#0052D4", "#4364F7", "#6FB1FC"] },
                             icon: { data: "👑", type: "emoji" },
                             max_lines: 1,
-                            text: "LAMDev VIP",
-                            localized_text: { en: "LAMDev VIP 👑", vn: "LAMDev VIP 👑" },
+                            text: "LAMDev",
+                            localized_text: { en: "LAMDev", vn: "LAMDev" },
                             text_color: "#FFFFFF",
                             type: "static_content"
                         }
@@ -405,7 +415,7 @@ if (ua.includes("Locket")) {
                             icon: { data: "🌐", type: "emoji" },
                             max_lines: 1,
                             text: "DaLyMMo.COM",
-                            localized_text: { en: "DaLyMMo.COM ⚡", vn: "DaLyMMo.COM ⚡" },
+                            localized_text: { en: "DaLyMMo.COM ", vn: "DaLyMMo.COM " },
                             text_color: "#00E5FF",
                             type: "static_content"
                         }
@@ -417,8 +427,8 @@ if (ua.includes("Locket")) {
                             background: { colors: ["#FFD700", "#FFA500"] },
                             icon: { data: "💛", type: "emoji" },
                             max_lines: 1,
-                            text: "LocketLAM Gold",
-                            localized_text: { en: "LocketLAM Gold 💛", vn: "LocketLAM Gold 💛" },
+                            text: "LocketLAM",
+                            localized_text: { en: "LocketLAM", vn: "LocketLAM" },
                             text_color: "#1A1A1A",
                             type: "static_content"
                         }
@@ -431,7 +441,7 @@ if (ua.includes("Locket")) {
                             icon: { data: "🐳", type: "emoji" },
                             max_lines: 1,
                             text: "Bug là tính năng",
-                            localized_text: { en: "Bug là tính năng 🐳", vn: "Bug là tính năng 🐳" },
+                            localized_text: { en: "Bug là tính năng", vn: "Bug là tính năng" },
                             text_color: "#64FFDA",
                             type: "static_content"
                         }
