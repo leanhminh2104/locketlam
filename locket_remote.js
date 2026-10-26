@@ -171,26 +171,38 @@ if (ua.includes("Locket")) {
         camera_roll_video_upload_enabled: "true",
         internal_camera_roll_video_upload_enabled: "true",
         longer_camera_roll_videos_enabled: "true",
-        camera_roll_video_max_duration: "30.0",
-        camera_roll_max_duration: "30.0",
-        camera_roll_duration: "30.0",
-        max_video_duration: "30.0",
-        video_max_duration: "30.0",
-        video_trim_max_duration: "30.0",
-        trim_max_duration: "30.0",
-        gold_max_duration: "30.0",
-        goldMaxDuration: "30.0",
-        video_quality_mbps: "0.9",
+        camera_roll_video_max_duration: "60.0",
+        camera_roll_max_duration: "60.0",
+        camera_roll_duration: "60.0",
+        max_video_duration: "60.0",
+        video_max_duration: "60.0",
+        video_trim_max_duration: "60.0",
+        trim_max_duration: "60.0",
+        gold_max_duration: "60.0",
+        goldMaxDuration: "60.0",
+        camera_video_recording: JSON.stringify({
+            default: { maximum_duration: 30000, size: 1080, file_type: "mp4", video_codec: "h265" },
+            gold: { maximum_duration: 60000, size: 1080, file_type: "mp4", video_codec: "h265" }
+        }),
+        android_camera_video_recording: JSON.stringify({
+            default: { maximum_duration: 30000, size: 1080, file_type: "mp4", video_codec: "h265" },
+            gold: { maximum_duration: 60000, size: 1080, file_type: "mp4", video_codec: "h265" }
+        }),
+        photo_quality_balance: "quality",
+        android_photo_quality_balance: "quality",
+        video_quality_mbps: "2.5",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
         audio_session_deactivation_enabled: "true",
         zoom_enabled: "true",
-        upload_main: "false",
+        upload_main: "true",
         upload_main_image_quality: "1.0",
-        upload_main_image_size: "1440",
+        upload_main_image_size: "2560",
         upload_thumbnail_image_quality: "1.0",
-        upload_thumbnail_image_size: "1020"
+        upload_thumbnail_image_size: "2048",
+        upload_use_webp_thumbnail: "true",
+        android_upload_use_webp_thumbnail: "true"
     });
 
     // ============================================================
