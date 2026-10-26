@@ -21,5 +21,9 @@ Locket_DeleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com
 # Mở khóa toàn bộ Remote Config (huy hiệu, khung widget, icon, video dài, xem locket)
 Locket_RemoteConfig = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_remote.js, requires-body=true, max-size=-1, timeout=60
 
+# Giữ Huy hiệu Locket Gold luôn BẬT và lưu vĩnh viễn
+Locket_ChangeBadge = type=http-request, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/changeProfileInfo, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, timeout=60
+Locket_FetchUser = type=http-response, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/(fetchUser|fetchUsers|fetchUserV2), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, requires-body=true, max-size=-1, timeout=60
+
 [MITM]
-hostname = %APPEND% api.revenuecat.com, firebaseremoteconfig.googleapis.com
+hostname = %APPEND% api.revenuecat.com, firebaseremoteconfig.googleapis.com, us-central1-locket-4252a.cloudfunctions.net

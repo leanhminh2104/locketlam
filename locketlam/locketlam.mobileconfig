@@ -1,134 +1,125 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>PayloadDisplayName</key>
-    <string>Locket Gold 💛 (LAMDev)</string>
+<dict>
+  <key>PayloadDisplayName</key>
+  <string>Locket Gold 💛 (LAMDev - DaLyMMO)</string>
 
-    <key>PayloadDescription</key>
-    <string>Hồ sơ cấu hình chống thu hồi Locket Gold vĩnh viễn.&#10;🌐 Website: dalymmo.com&#10;🛠 Phát hành bởi LAMDev (NextDNS 992769).</string>
+  <key>PayloadDescription</key>
+  <string>Hồ sơ cấu hình NextDNS chuẩn Apple DoH bảo vệ Locket Gold và chống thu hồi chứng chỉ vĩnh viễn.&#10;🌐 Website: dalymmo.com&#10;🛠 Phát hành bởi LAMDev (NextDNS ID: 992769).</string>
 
-    <key>PayloadIdentifier</key>
-    <string>io.nextdns.992769.locketlam.profile</string>
+  <key>PayloadIdentifier</key>
+  <string>com.dalymmo.locketlam.dns.992769.profile</string>
 
-    <key>PayloadScope</key>
-    <string>System</string>
+  <key>PayloadScope</key>
+  <string>System</string>
 
-    <key>PayloadType</key>
-    <string>Configuration</string>
+  <key>PayloadType</key>
+  <string>Configuration</string>
 
-    <key>PayloadUUID</key>
-    <string>3C6C2652-9FA8-4D48-9F55-52B19F0D24B1</string>
+  <key>PayloadUUID</key>
+  <string>3C6C2652-9FA8-4D48-9F55-52B19F0D24B1</string>
 
-    <key>PayloadVersion</key>
-    <integer>1</integer>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
 
-    <key>PayloadContent</key>
-    <array>
+  <key>PayloadOrganization</key>
+  <string>LAMDev - dalymmo.com</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>DNSSettings</key>
       <dict>
-        <key>DNSSettings</key>
+        <key>DNSProtocol</key>
+        <string>HTTPS</string>
+
+        <!-- Điểm cuối DoH chính thức gắn kèm tên thiết bị locketlam để ghi nhận Analytics trên NextDNS -->
+        <key>ServerURL</key>
+        <string>https://apple.dns.nextdns.io/992769/locketlam</string>
+
+        <!-- Địa chỉ IP mồi chuẩn NextDNS Anycast (IPv4 và IPv6) -->
+        <key>ServerAddresses</key>
+        <array>
+          <string>45.90.28.15</string>
+          <string>45.90.30.15</string>
+          <string>2a07:a8c0::99:2769</string>
+          <string>2a07:a8c1::99:2769</string>
+        </array>
+
+        <!-- Split DNS: Chỉ định tuyến riêng các domain cần chặn để giữ Locket Gold và chống thu hồi chứng chỉ -->
+        <key>SupplementalMatchDomains</key>
+        <array>
+          <string>api.revenuecat.com</string>
+          <string>app.revenuecat.com</string>
+          <string>in.appcenter.ms</string>
+          <string>app-measurement.com</string>
+          <string>firebaselogging-pa.googleapis.com</string>
+          <string>mixpanel.com</string>
+          <string>api.mixpanel.com</string>
+          <string>ocsp.apple.com</string>
+          <string>ocsp2.apple.com</string>
+          <string>ppq.apple.com</string>
+          <string>iadsdk.apple.com</string>
+        </array>
+      </dict>
+
+      <key>OnDemandRules</key>
+      <array>
+        <!-- Bỏ qua Captive Portal để không bị kẹt khi đăng nhập Wi-Fi công cộng hoặc xác thực mạng di động -->
         <dict>
-          <key>DNSProtocol</key>
-          <string>HTTPS</string>
-
-          <!-- Địa chỉ IP mồi chuẩn của NextDNS -->
-          <key>ServerAddresses</key>
+          <key>Action</key>
+          <string>EvaluateConnection</string>
+          <key>ActionParameters</key>
           <array>
-            <string>45.90.28.15</string>
-            <string>45.90.30.15</string>
-            <string>2a07:a8c0::99:2769</string>
-            <string>2a07:a8c1::99:2769</string>
-          </array>
-
-          <!-- Máy chủ DoH NextDNS cá nhân của bạn -->
-          <key>ServerURL</key>
-          <string>https://dns.nextdns.io/992769</string>
-
-          <!-- Split DNS: Chỉ định tuyến riêng các domain cần chặn để giữ Locket Gold -->
-          <key>SupplementalMatchDomains</key>
-          <array>
-            <string>api.revenuecat.com</string>
-            <string>app.revenuecat.com</string>
-            <string>in.appcenter.ms</string>
-            <string>app-measurement.com</string>
-            <string>firebaselogging-pa.googleapis.com</string>
-            <string>mixpanel.com</string>
-            <string>api.mixpanel.com</string>
-            <string>ocsp.apple.com</string>
-            <string>ocsp2.apple.com</string>
-            <string>ppq.apple.com</string>
-            <string>iadsdk.apple.com</string>
+            <dict>
+              <key>DomainAction</key>
+              <string>NeverConnect</string>
+              <key>Domains</key>
+              <array>
+                <string>captive.apple.com</string>
+                <string>3gppnetwork.org</string>
+                <string>dav.orange.fr</string>
+                <string>vvm.mobistar.be</string>
+                <string>vvm.mstore.msg.t-mobile.com</string>
+                <string>tma.vvm.mone.pan-net.eu</string>
+                <string>vvm.ee.co.uk</string>
+              </array>
+            </dict>
           </array>
         </dict>
 
-        <key>OnDemandRules</key>
-        <array>
-          <!-- Bỏ qua Captive Portal để không bị kẹt khi đăng nhập Wi-Fi công cộng -->
-          <dict>
-            <key>Action</key>
-            <string>EvaluateConnection</string>
-            <key>ActionParameters</key>
-            <array>
-              <dict>
-                <key>DomainAction</key>
-                <string>NeverConnect</string>
-                <key>Domains</key>
-                <array>
-                  <string>captive.apple.com</string>
-                  <string>3gppnetwork.org</string>
-                  <string>dav.orange.fr</string>
-                  <string>vvm.mobistar.be</string>
-                  <string>vvm.mstore.msg.t-mobile.com</string>
-                  <string>tma.vvm.mone.pan-net.eu</string>
-                  <string>vvm.ee.co.uk</string>
-                </array>
-              </dict>
-            </array>
-          </dict>
+        <!-- Tự động kích hoạt trên mọi mạng (Wi-Fi, 4G, 5G, Hotspot) -->
+        <dict>
+          <key>Action</key>
+          <string>Connect</string>
+        </dict>
+      </array>
 
-          <!-- Tự động kích hoạt khi có kết nối Wi-Fi -->
-          <dict>
-            <key>Action</key>
-            <string>Connect</string>
-            <key>InterfaceTypeMatch</key>
-            <string>WiFi</string>
-          </dict>
+      <key>PayloadType</key>
+      <string>com.apple.dnsSettings.managed</string>
 
-          <!-- Tự động kích hoạt khi dùng mạng di động 4G/5G -->
-          <dict>
-            <key>Action</key>
-            <string>Connect</string>
-            <key>InterfaceTypeMatch</key>
-            <string>Cellular</string>
-          </dict>
-        </array>
+      <key>PayloadIdentifier</key>
+      <string>com.dalymmo.locketlam.dns.992769.managed</string>
 
-        <key>PayloadType</key>
-        <string>com.apple.dnsSettings.managed</string>
+      <key>PayloadUUID</key>
+      <string>62F0D8E9-2182-4E38-9844-3B9B3BC03417</string>
 
-        <key>PayloadIdentifier</key>
-        <string>io.nextdns.992769.locketlam.profile.dnsSettings.managed</string>
+      <key>PayloadDisplayName</key>
+      <string>NextDNS (992769 / locketlam)</string>
 
-        <key>PayloadUUID</key>
-        <string>62F0D8E9-2182-4E38-9844-3B9B3BC03417</string>
+      <key>PayloadDescription</key>
+      <string>Cấu hình DNS-over-HTTPS (DoH) bảo mật bảo vệ thiết bị và Locket Gold.</string>
 
-        <key>PayloadDisplayName</key>
-        <string>Locket Gold DNS (LAMDev - dalymmo.com)</string>
+      <key>PayloadOrganization</key>
+      <string>LAMDev - dalymmo.com</string>
 
-        <key>PayloadDescription</key>
-        <string>DNS Chống thu hồi Locket Gold phát hành bởi LAMDev (dalymmo.com).</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+    </dict>
+  </array>
 
-        <key>PayloadOrganization</key>
-        <string>LAMDev - dalymmo.com</string>
-
-        <key>PayloadVersion</key>
-        <integer>1</integer>
-      </dict>
-    </array>
-
-    <key>PayloadOrganization</key>
-    <string>LAMDev - dalymmo.com</string>
-    <key>PayloadRemovalDisallowed</key>
-    <false/>
-  </dict>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+</dict>
 </plist>

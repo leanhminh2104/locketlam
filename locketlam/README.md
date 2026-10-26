@@ -1,16 +1,20 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="Nâng Locket Gold bằng Shadowrocket - LAMDev" width="100%">
+</p>
+
 # 💛 Locket Gold VIP - LAMDev
 
 > **Bộ công cụ chuyên biệt mở khóa Locket Gold VIP vĩnh viễn & Chống thu hồi**  
-> 🌐 Website: [dalymmo.com](https://dalymmo.com) | 📢 Telegram: [LAMDev Channel](https://t.me/dalymmo)  
+> 🌐 Website: [dalymmo.com](https://dalymmo.com) | 📢 Kênh hỗ trợ: [Telegram @dalymmo](https://t.me/dalymmo)  
 > 📦 Repository: [leanhminh2104/locketlam](https://github.com/leanhminh2104/locketlam/tree/shadowrocket) | 🌿 Nhánh: `shadowrocket`
 
 ---
 
 ## 🌟 Giới thiệu
 
-**LocketLAM** là gói cấu hình và module tinh gọn, được phát triển chuyên biệt **100% dành riêng cho ứng dụng Locket**, loại bỏ toàn bộ các script rườm rà không cần thiết của các ứng dụng khác. 
+**LocketLAM** là bộ giải pháp mở khóa Locket Gold chuyên nghiệp do **LAMDev** phát triển, tinh gọn **100% dành riêng cho ứng dụng Locket**, loại bỏ toàn bộ các thành phần dư thừa của các ứng dụng khác giúp hệ thống hoạt động nhẹ nhất, mượt nhất và ổn định nhất.
 
-Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện từ giao diện, tính năng camera, bộ nhớ cho tới các quyền hạn cao cấp trên hệ thống.
+Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện từ giao diện, camera, dung lượng bộ nhớ cho tới các quyền hạn cao cấp trên hệ thống. Kèm theo đó là giải pháp **DNS Chống thu hồi độc quyền từ DalyMMO** giúp bạn giữ trạng thái Gold vĩnh viễn mà không cần phải bật VPN liên tục.
 
 ---
 
@@ -32,87 +36,123 @@ Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện 
 
 ## 🚀 Cài đặt nhanh 1-Click (Dành cho iOS)
 
-### Cách 1: Cài đặt Module Shadowrocket (Khuyên dùng - Nhanh & Nhẹ nhất)
+> 💡 **Mẹo:** Khi xem trang này trên trình duyệt Safari hoặc GitHub trên iPhone, bạn chỉ cần chạm trực tiếp vào các nút bên dưới. Thiết bị sẽ tự động gọi ứng dụng **Shadowrocket** và thêm cấu hình ngay lập tức!
 
-Bấm vào nút bên dưới trên iPhone để cài đặt tự động vào Shadowrocket:
+<p align="center">
+  <a href="shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Fleanhminh2104%2Flocketlam%2Frefs%2Fheads%2Fshadowrocket%2Flocketlam.sgmodule">
+    <img src="https://img.shields.io/badge/Cài_đặt_Module_Locket-007AFF?style=for-the-badge&logo=shadowrocket&logoColor=white&label=1--Click" alt="Cài đặt Module Locket">
+  </a>
+  &nbsp;
+  <a href="shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf">
+    <img src="https://img.shields.io/badge/Thêm_Config_Locket-34C759?style=for-the-badge&logo=shadowrocket&logoColor=white&label=1--Click" alt="Thêm Config Locket">
+  </a>
+  &nbsp;
+  <a href="https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf">
+    <img src="https://img.shields.io/badge/Tải_File_Cấu_Hình-FF9500?style=for-the-badge&logo=apple&logoColor=white&label=.CONF" alt="Tải File Cấu Hình .conf">
+  </a>
+  &nbsp;
+  <a href="https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig">
+    <img src="https://img.shields.io/badge/Tải_Cấu_Hình_DNS_Chống_Thu_Hồi-AF52DE?style=for-the-badge&logo=apple&logoColor=white&label=Profile" alt="Tải Hồ Sơ DNS Chống Thu Hồi">
+  </a>
+</p>
 
-[![Cài đặt Module](https://img.shields.io/badge/Shadowrocket-Cài_đặt_Module_1--Click-2563eb?style=for-the-badge&logo=apple)](shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Fleanhminh2104%2Flocketlam%2Frefs%2Fheads%2Fshadowrocket%2Flocketlam.sgmodule)
+### Bảng liên kết & Sao chép thủ công:
 
-- **Link chép thủ công:**
-  ```text
-  https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule
-  ```
-
----
-
-### Cách 2: Cài đặt File Cấu hình (Config) Shadowrocket
-
-Nếu bạn muốn dùng một file cấu hình độc lập không đụng hàng:
-
-[![Cài đặt Config](https://img.shields.io/badge/Shadowrocket-Cài_đặt_Config_1--Click-0284c7?style=for-the-badge&logo=apple)](shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf)
-
-- **Link chép thủ công:**
-  ```text
-  https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf
-  ```
-
----
-
-### Cách 3: Cài đặt Profile DNS Chống thu hồi (Giữ Gold không cần bật VPN)
-
-Dành cho những bạn muốn tắt hẳn Shadowrocket sau khi đã lên Gold:
-
-👉 **[Tải Hồ sơ DNS Chống thu hồi qua Safari](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig)**
+| Mục cài đặt | Thao tác nhanh (1-Click) | Link chép thủ công |
+| :--- | :--- | :--- |
+| **Module Locket (Khuyên dùng)** | [⚡ Bấm để cài Module](shadowrocket://install?module=https%3A%2F%2Fraw.githubusercontent.com%2Fleanhminh2104%2Flocketlam%2Frefs%2Fheads%2Fshadowrocket%2Flocketlam.sgmodule) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule` |
+| **Config Locket** | [🚀 Bấm để thêm Config](shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf` |
+| **Tải File Cấu Hình** | [📥 Bấm để tải file .conf](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf` |
+| **Hồ sơ DNS Chống thu hồi** | [🛡️ Tải Profile DNS (.mobileconfig)](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig` |
 
 ---
 
-## 📖 Hướng dẫn chi tiết từng bước cho người mới (A - Z)
+## 📖 Hướng dẫn chi tiết bằng hình ảnh từ A - Z (7 Bước)
 
-### Bước 1: Cài đặt chứng chỉ HTTPS Giải mã (MITM) trong Shadowrocket
-> ⚠️ **BƯỚC BẮT BUỘC:** Nếu không cài chứng chỉ MITM, Shadowrocket sẽ không thể giải mã gói tin để kích hoạt VIP Locket!
+### Bước 1: Tải và cài đặt ứng dụng Shadowrocket
+- Mở App Store trên iPhone, tìm kiếm từ khóa `Shadowrocket` và bấm tải về.
+- *(Nếu chưa có tài khoản đã mua Shadowrocket, bạn có thể tìm kiếm các tài khoản chia sẻ miễn phí trên mạng hoặc cài đặt qua tệp IPA).*
 
-1. Mở app **Shadowrocket** ➔ Chọn tab **Cấu hình (Configuration)** ở thanh dưới.
-2. Bấm vào mục **HTTPS Giải mã (HTTPS Decryption)**:
-   - Bật công tắc **HTTPS Giải mã**.
-   - Bấm **Tạo chứng chỉ mới (Generate New CA)**.
-   - Bấm tiếp **Cài đặt chứng chỉ vào hệ thống (Install Certificate to System)** ➔ Bấm **Cho phép** khi có thông báo tải về hồ sơ.
-3. Thoát ra màn hình chính, mở **Cài đặt** của iPhone:
-   - Thấy dòng **Đã tải về hồ sơ** ở trên cùng ➔ Bấm vào và chọn **Cài đặt**.
-4. Bật quyền tin cậy tối cao cho chứng chỉ:
-   - Vào **Cài đặt ➔ Cài đặt chung ➔ Giới thiệu ➔ Cài đặt tin cậy chứng nhận** *(nằm ở dưới cùng)*.
-   - Gạt công tắc sang **BẬT (Màu xanh)** cho chứng chỉ `Shadowrocket`.
+![Bước 1: Tải Shadowrocket](./assets/steps/step1_download.jpg)
 
 ---
 
-### Bước 2: Kích hoạt Locket Gold
-1. Thêm **Module** (Cách 1) hoặc **Cấu hình** (Cách 2) ở trên vào Shadowrocket.
-2. Bật công tắc kết nối ở trang chủ Shadowrocket (hiện biểu tượng VPN nhỏ trên thanh trạng thái).
-3. Vuốt tắt hẳn ứng dụng Locket từ danh sách đa nhiệm (không để chạy ngầm).
-4. Mở lại app Locket ➔ Vào trang cá nhân của bạn, tận hưởng trọn vẹn **Locket Gold VIP 💛**!
+### Bước 2: Thêm Module hoặc Cấu hình vào Shadowrocket
+- Bấm vào nút cài đặt nhanh ở mục **Cài đặt nhanh 1-Click** phía trên trình duyệt iPhone.
+- Hệ thống sẽ hiện hộp thoại xác nhận **Mở trong “Shadowrocket”?** ➔ Bấm **Mở**.
+- Trong Shadowrocket: cấu hình `locketlam.conf` đã được thêm tự động, chạm vào và bấm **Sử dụng Config**.
+
+![Bước 2: Thêm cấu hình](./assets/steps/step2_add_config.jpg)
 
 ---
 
-### Bước 3: Chống thu hồi vĩnh viễn (Tùy chọn)
-1. Sau khi Locket trên máy bạn đã hiển thị huy hiệu Gold và các tính năng mở khóa thành công, bạn có thể tắt VPN Shadowrocket đi.
-2. Mở trình duyệt Safari trên iPhone, bấm vào link ở **Cách 3** để tải file `locketlam.mobileconfig`.
+### Bước 3: Kích hoạt Giải mã HTTPS (HTTPS Decryption)
+- Tại tab **Cấu hình**, bấm vào biểu tượng chữ **(i)** màu xanh bên cạnh file cấu hình `locketlam.conf`.
+- Tìm đến mục **Giải mã HTTPS (HTTPS Decryption)** và gạt công tắc sang **BẬT (Màu xanh)**.
+
+![Bước 3: Bật Giải mã HTTPS](./assets/steps/step3_enable_https.jpg)
+
+---
+
+### Bước 4: Tạo và tải Chứng chỉ CA mới
+- Trong mục Chứng chỉ CA: bấm vào dòng **Tạo Chứng chỉ CA mới** ➔ Bấm xác nhận **Tạo Chứng chỉ CA mới**.
+- Bấm tiếp dòng **Cài đặt Chứng chỉ CA vào hệ thống** ➔ Trình duyệt Safari sẽ hiện thông báo, bấm **Cho phép** để tải hồ sơ chứng chỉ về máy.
+
+![Bước 4: Tạo và tải Chứng chỉ CA](./assets/steps/step4_generate_ca.jpg)
+
+---
+
+### Bước 5: Cài đặt hồ sơ chứng chỉ vào iPhone
+- Mở ứng dụng **Cài đặt** của iPhone ➔ Chọn mục **Đã tải về hồ sơ** ở trên cùng (hoặc vào **Cài đặt chung ➔ Quản lý VPN & thiết bị**).
+- Chọn hồ sơ chứng chỉ Shadowrocket vừa tải về ➔ Bấm nút **Cài đặt** ở góc trên bên phải màn hình và nhập mật mã máy nếu có.
+
+![Bước 5: Cài đặt hồ sơ vào iPhone](./assets/steps/step5_install_profile.jpg)
+
+---
+
+### Bước 6: Bật quyền tin cậy chứng nhận gốc
+> ⚠️ **LƯU Ý:** Đây là bước quan trọng nhất để Shadowrocket có thể kích hoạt được Locket Gold!
+
+- Vào **Cài đặt ➔ Cài đặt chung ➔ Giới thiệu**.
+- Kéo xuống dưới cùng, chọn dòng **Cài đặt tin cậy chứng nhận**.
+- Tại mục *Bật tin cậy đầy đủ cho chứng nhận gốc*, gạt công tắc chứng chỉ **Shadowrocket** sang **BẬT (Màu xanh)** ➔ Hiện bảng cảnh báo, bấm **Tiếp tục**.
+
+![Bước 6: Bật tin cậy chứng chỉ](./assets/steps/step6_trust_cert.jpg)
+
+---
+
+### Bước 7: Bật kết nối VPN và tận hưởng Locket Gold
+- Quay lại ứng dụng Shadowrocket, tại tab **Nhà (Home)** ở thanh dưới cùng:
+- Gạt công tắc kết nối ở trên cùng sang **BẬT** ➔ Hiện bảng xác nhận, bấm **Kết nối** (hiện biểu tượng VPN trên thanh trạng thái).
+- **Vuốt tắt hẳn ứng dụng Locket từ danh sách đa nhiệm** (không để app chạy ngầm), sau đó mở lại app Locket.
+- Tài khoản của bạn đã được kích hoạt **Locket Gold VIP 💛** thành công!
+
+![Bước 7: Bật kết nối VPN](./assets/steps/step7_connect_vpn.jpg)
+
+---
+
+### 🛡 Bước phụ: Chống thu hồi vĩnh viễn (Không cần bật VPN)
+Sau khi Locket đã lên Gold thành công, nếu bạn không muốn bật VPN Shadowrocket liên tục làm tốn pin:
+1. Bạn có thể **tắt VPN Shadowrocket đi**.
+2. Mở trình duyệt Safari trên iPhone, bấm nút **Tải Cấu Hình DNS Chống Thu Hồi** ở bảng cài đặt nhanh hoặc mở file `locketlam.mobileconfig`.
 3. Vào **Cài đặt ➔ Đã tải về hồ sơ ➔ Cài đặt**.
 4. Vào **Cài đặt ➔ Cài đặt chung ➔ VPN & Quản lý thiết bị ➔ DNS ➔ Chọn "Locket Gold DNS (LAMDev)"**.
-5. Bây giờ Locket Gold sẽ được khóa giữ vĩnh viễn trên máy của bạn, không lo bị kiểm tra hay thu hồi lại!
+5. Bây giờ Locket Gold sẽ được giữ vĩnh viễn trên iPhone của bạn mà không cần bật VPN nữa!
 
 ---
 
 ## ❓ Câu hỏi thường gặp (FAQ)
 
 <details>
-<summary><b>1. Tôi đã làm theo nhưng vào Locket vẫn chưa có Gold?</b></summary>
+<summary><b>1. Tôi đã làm theo hướng dẫn nhưng vào Locket vẫn chưa có Gold?</b></summary>
 - Kiểm tra xem bạn đã bật tin cậy chứng chỉ ở <i>Cài đặt ➔ Cài đặt chung ➔ Giới thiệu ➔ Cài đặt tin cậy chứng nhận</i> chưa.<br>
 - Đảm bảo đã vuốt tắt hẳn app Locket chạy ngầm trước khi mở lại.<br>
-- Vào Cài đặt Locket bấm nút "Khôi phục gói mua" (Restore Purchase).
+- Vào Cài đặt trong Locket bấm nút "Khôi phục gói mua" (Restore Purchase).
 </details>
 
 <details>
 <summary><b>2. Dùng DNS chống thu hồi này mạng có bị chậm hay lag không?</b></summary>
-Hoàn toàn không! Cấu hình sử dụng công nghệ <b>Split DNS</b>, chỉ định tuyến duy nhất các yêu cầu kiểm tra của Locket về server chống thu hồi, còn toàn bộ mạng lướt web, Facebook, TikTok, YouTube... vẫn dùng 100% mạng gốc tốc độ cao.
+Hoàn toàn không! Cấu hình sử dụng công nghệ <b>Split DNS</b>, chỉ định tuyến duy nhất các yêu cầu kiểm tra của Locket về server chống thu hồi của DalyMMO (ID: <code>992769</code>), còn toàn bộ mạng lướt web, Facebook, TikTok, YouTube... vẫn dùng 100% mạng gốc tốc độ cao.
 </details>
 
 <details>

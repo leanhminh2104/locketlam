@@ -54,22 +54,32 @@ if (ua.includes("Locket")) {
             title: "Lên LocketGold rồi đó 😎",
             feature_set: [
                 {
-                    title: "Nhớ follow tiktok @duyvinh.09 ✨",
-                    body: "Một follow của bạn, một niềm vui của mình 💛",
-                    imageURL: "https://i.ibb.co/gZ6HkyWT/L-n-Gold-R-i.png"
+                    title: "Locket Gold VIP - LAMDev ✨",
+                    body: "Đã kích hoạt thành công Locket Gold VIP 💛",
+                    imageURL: "https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/assets/welcome_banner.png"
                 }
             ],
             primary_button_title: "Xong",
             campaign: "locket_gold_welcome_v3",
             start_at: "2020-01-01T00:00:00",
-            end_at: "2099-12-31T23:59:59",
+            end_at: "3000-12-31T23:59:59",
             use_local_time_zone: true
         }),
-        android_subscribe_gold_button_enabled: "false",
         profile_badge_visible: "true",
+        beta_features_enabled: "true",
+        link_caption_link_enabled: "true",
+        music_caption_enabled: "true",
+        music_caption_song_preview_enabled: "true",
+        unsend_message_enabled: "true",
         lunar_new_year_app_icon_enabled: "true",
-        settings_instagram_url: "https://www.instagram.com/dvinh.09/",
-        settings_tiktok_url: "https://tiktok.com/@duyvinh.09"
+        year_of_the_horse_icon_enabled: "true",
+        settings_instagram_url: "https://instagram.com/leanminh2104",
+        settings_tiktok_url: "https://www.tiktok.com/@leanhminh2104",
+        settings_twitter_url: "https://dalymmo.com",
+        help_center_url: "https://locketlam.dalymmo.com/help",
+        safety_center_url: "https://locketlam.dalymmo.com/safety",
+        parent_center_url: "https://locketlam.dalymmo.com",
+        rewarded_referral_rule_url: "https://locketlam.dalymmo.com/aff"
     });
 
     // ============================================================
@@ -161,26 +171,38 @@ if (ua.includes("Locket")) {
         camera_roll_video_upload_enabled: "true",
         internal_camera_roll_video_upload_enabled: "true",
         longer_camera_roll_videos_enabled: "true",
-        camera_roll_video_max_duration: "30.0",
-        camera_roll_max_duration: "30.0",
-        camera_roll_duration: "30.0",
-        max_video_duration: "30.0",
-        video_max_duration: "30.0",
-        video_trim_max_duration: "30.0",
-        trim_max_duration: "30.0",
-        gold_max_duration: "30.0",
-        goldMaxDuration: "30.0",
-        video_quality_mbps: "0.9",
+        camera_roll_video_max_duration: "60.0",
+        camera_roll_max_duration: "60.0",
+        camera_roll_duration: "60.0",
+        max_video_duration: "60.0",
+        video_max_duration: "60.0",
+        video_trim_max_duration: "60.0",
+        trim_max_duration: "60.0",
+        gold_max_duration: "60.0",
+        goldMaxDuration: "60.0",
+        camera_video_recording: JSON.stringify({
+            default: { maximum_duration: 30000, size: 1080, file_type: "mp4", video_codec: "h265" },
+            gold: { maximum_duration: 60000, size: 1080, file_type: "mp4", video_codec: "h265" }
+        }),
+        android_camera_video_recording: JSON.stringify({
+            default: { maximum_duration: 30000, size: 1080, file_type: "mp4", video_codec: "h265" },
+            gold: { maximum_duration: 60000, size: 1080, file_type: "mp4", video_codec: "h265" }
+        }),
+        photo_quality_balance: "quality",
+        android_photo_quality_balance: "quality",
+        video_quality_mbps: "2.5",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
         audio_session_deactivation_enabled: "true",
         zoom_enabled: "true",
-        upload_main: "false",
+        upload_main: "true",
         upload_main_image_quality: "1.0",
-        upload_main_image_size: "1440",
+        upload_main_image_size: "2560",
         upload_thumbnail_image_quality: "1.0",
-        upload_thumbnail_image_size: "1020"
+        upload_thumbnail_image_size: "2048",
+        upload_use_webp_thumbnail: "true",
+        android_upload_use_webp_thumbnail: "true"
     });
 
     // ============================================================
@@ -243,7 +265,7 @@ if (ua.includes("Locket")) {
         streak.minimum_recovery_count = 0;
         streak.minimum_display_count = 0;
         obj.entries.streak_config = JSON.stringify(streak);
-    } catch (e) {}
+    } catch (e) { }
 
     Object.assign(obj.entries, {
         moment_views_enabled: "true",
@@ -375,11 +397,69 @@ if (ua.includes("Locket")) {
         music_caption_song_preview_enabled: "true",
         link_caption_link_enabled: "true",
         overlay_dynamic_captions: JSON.stringify([
+            "lamdev_vip", "dalymmo_official", "locketlam_gold", "lamdev_whale",
             "standard", "poll", "color_palette", "review", "music", "location",
             "weather", "time", "streak", "star_sign", "party_time", "locket_count",
             "good_morning", "goodnight", "ootd", "miss_you", "custom", "phunu_2010", "halloween_2026"
         ]),
         overlay_items: JSON.stringify([
+            {
+                section: "👑 Độc Quyền LAMDev",
+                items: [
+                    {
+                        overlay_id: "caption:lamdev_vip",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#0052D4", "#4364F7", "#6FB1FC"] },
+                            icon: { data: "👑", type: "emoji" },
+                            max_lines: 1,
+                            text: "LAMDev",
+                            localized_text: { en: "LAMDev", vn: "LAMDev" },
+                            text_color: "#FFFFFF",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:dalymmo_official",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#0F2027", "#203A43", "#2C5364"] },
+                            icon: { data: "🌐", type: "emoji" },
+                            max_lines: 1,
+                            text: "DaLyMMo.COM",
+                            localized_text: { en: "DaLyMMo.COM ", vn: "DaLyMMo.COM " },
+                            text_color: "#00E5FF",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:locketlam_gold",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#FFD700", "#FFA500"] },
+                            icon: { data: "💛", type: "emoji" },
+                            max_lines: 1,
+                            text: "LocketLAM",
+                            localized_text: { en: "LocketLAM", vn: "LocketLAM" },
+                            text_color: "#1A1A1A",
+                            type: "static_content"
+                        }
+                    },
+                    {
+                        overlay_id: "caption:lamdev_whale",
+                        source: "remote",
+                        caption: {
+                            background: { colors: ["#0A192F", "#172A45", "#304D6D"] },
+                            icon: { data: "🐳", type: "emoji" },
+                            max_lines: 1,
+                            text: "Bug là tính năng",
+                            localized_text: { en: "Bug là tính năng", vn: "Bug là tính năng" },
+                            text_color: "#64FFDA",
+                            type: "static_content"
+                        }
+                    }
+                ]
+            },
             {
                 section: "🎨 General",
                 items: [
