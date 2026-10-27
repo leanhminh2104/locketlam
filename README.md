@@ -36,14 +36,16 @@ Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện 
 
 ## 🚀 Cài đặt nhanh 1-Click (Dành cho iOS)
 
-> 💡 **Mẹo:** Trên Safari iPhone, bấm trực tiếp vào liên kết **1-Click** bên dưới để thiết bị tự động mở ứng dụng **Shadowrocket** và nạp cấu hình ngay lập tức!
+> 💡 **Mẹo:** Trên Safari iPhone, bấm trực tiếp vào liên kết **1-Click** bên dưới để thiết bị tự động chuyển hướng và mở ứng dụng **Shadowrocket** nạp cấu hình ngay lập tức!
+> 
+> 🌐 Hoặc mở giao diện cài đặt nhanh chuyên biệt tại: **[👉 Mở Trang Web Cài Đặt (Web Installer)](https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/index.html)**
 
 ### 📲 1-Click Mở Ngay Trong Shadowrocket:
 
 * ⚡ **Cài đặt Module (Khuyên dùng):**  
-  [👉 Bấm vào đây để cài Module Locket Gold](shadowrocket://install?module=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule)
+  [👉 Bấm vào đây để cài Module Locket Gold](https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/module.html)
 * 🚀 **Thêm Cấu hình Config:**  
-  [👉 Bấm vào đây để thêm Config Locket](shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf)
+  [👉 Bấm vào đây để thêm Config Locket](https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/conf.html)
 
 ---
 
@@ -60,8 +62,8 @@ Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện 
 
 | Mục cài đặt | Thao tác 1-Click | Link chép thủ công |
 | :--- | :--- | :--- |
-| **Module Locket (.sgmodule)** | [⚡ Cài đặt Module](shadowrocket://install?module=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule` |
-| **Config Locket (.conf)** | [🚀 Thêm Config](shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf` |
+| **Module Locket (.sgmodule)** | [⚡ Cài đặt Module](https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/module.html) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule` |
+| **Config Locket (.conf)** | [🚀 Thêm Config](https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/conf.html) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf` |
 | **Hồ sơ DNS (.mobileconfig)** | [🛡️ Tải Profile DNS](https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig) | `https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig` |
 
 ---
