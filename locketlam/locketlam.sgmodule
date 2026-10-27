@@ -16,9 +16,9 @@ deleteHeader = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)
 # Mở khóa toàn bộ Remote Config (video 60s, ảnh 2K, icon VIP, khung widget, không quảng cáo)
 locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_remote.js, requires-body=true, max-size=-1, timeout=60
 
-# Giữ Huy hiệu Locket Gold luôn BẬT và lưu vĩnh viễn
-locket_badge = type=http-request, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/changeProfileInfo, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, timeout=60
-locket_user = type=http-response, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/(fetchUser|fetchUsers|fetchUserV2), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, requires-body=true, max-size=-1, timeout=60
+# Giữ Huy hiệu Locket Gold luôn BẬT và đồng bộ thông tin tài khoản
+locket_badge = type=http-request, pattern=^https:\/\/api\.locketcamera\.com\/changeProfileInfo, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, timeout=60
+locket_user = type=http-response, pattern=^https:\/\/api\.locketcamera\.com\/.+, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, api.rc-backup.com, firebaseremoteconfig.googleapis.com, us-central1-locket-4252a.cloudfunctions.net
+hostname = %APPEND% api.revenuecat.com, api.rc-backup.com, firebaseremoteconfig.googleapis.com, api.locketcamera.com
