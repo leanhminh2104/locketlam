@@ -139,9 +139,9 @@
 			<key>IsRemovable</key>
 			<true/>
 			<key>Label</key>
-			<string>Locket Gold</string>
+			<string>dalymmo.com</string>
 			<key>PayloadDisplayName</key>
-			<string>Locket Gold VIP Icon</string>
+			<string>dalymmo.com WebClip</string>
 			<key>PayloadIdentifier</key>
 			<string>com.apple.webClip.managed.dalymmo-locketlam-icon</string>
 			<key>PayloadOrganization</key>
@@ -155,7 +155,7 @@
 			<key>Precomposed</key>
 			<true/>
 			<key>URL</key>
-			<string>https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/index.html</string>
+			<string>https://dalymmo.com</string>
 		</dict>
 
 		<!-- 3. QUYỀN TRỢ NĂNG DOANH NGHIỆP (CHO PHÉP TIN CẬY & CÀI APP NGOÀI APP STORE) -->
