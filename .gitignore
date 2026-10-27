@@ -1,0 +1,10 @@
+# Giữ các file mã nguồn chưa mã hóa ở máy cục bộ, tuyệt đối không đẩy lên GitHub
+/locketlam.js
+/locket_profile.js
+/deleteHeader.js
+/locket_remote.js
+
+# Cache & node
+node_modules/
+*.log
+khoindvn.mobileconfig
