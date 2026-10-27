@@ -1,202 +1,1007 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locket Gold VIP - Kích Hoạt Bằng Shadowrocket | LAMDev</title>
-    <meta name="description" content="Hướng dẫn mở khóa Locket Gold VIP vĩnh viễn trên iPhone bằng Shadowrocket. Kích hoạt video 60s, ảnh 2K HD, không quảng cáo và chống thu hồi.">
-    <meta name="theme-color" content="#F59E0B">
-    <link rel="icon" type="image/png" href="./assets/img/shadowrocket.webp"/>
+    <title>Locket Gold VIP - Nâng Locket Gold Bằng Shadowrocket | LAMDev</title>
+    <meta name="description" content="Hướng dẫn mở khóa Locket Gold VIP vĩnh viễn trên iPhone bằng Shadowrocket. Kích hoạt video 60s, ảnh 2K HD, không quảng cáo và chống thu hồi bản quyền LAMDev dalymmo.com.">
+    <meta name="theme-color" content="#020817">
+    <link rel="icon" type="image/png" href="./assets/banner.png"/>
+    
+    <!-- Google Fonts: Outfit (Display) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        cyan: {
+                            glow: '#00F0FF',
+                            deep: '#0284C7',
+                            neon: '#38BDF8',
+                        },
+                        gold: {
+                            DEFAULT: '#FFD700',
+                            glow: '#FBBF24',
+                            deep: '#D97706',
+                        },
+                        ocean: {
+                            950: '#020817',
+                            900: '#04112c',
+                            800: '#0a1c44',
+                            700: '#112966',
+                            600: '#1d3e8a',
+                        }
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 25px rgba(0, 240, 255, 0.45)',
+                        'neon-gold': '0 0 25px rgba(251, 191, 36, 0.45)',
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Feather Icons & AOS Animations -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        .copy-btn:hover { transform: scale(1.05); }
-        .copy-btn:active { transform: scale(0.95); }
-        .btn-action:hover { transform: translateY(-2px); }
-        .btn-action:active { transform: translateY(1px); }
-        :root {
-            --gold: #F59E0B;
-            --gold-light: #FEF3C7;
-            --gold-dark: #D97706;
+        /* Cyber Ocean Aesthetic matching banner.png */
+        body {
+            background-color: #020817;
+            color: #F3F4F6;
         }
+
+        .glass-panel {
+            background: rgba(4, 17, 44, 0.72);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(0, 240, 255, 0.22);
+        }
+
+        .glass-card {
+            background: rgba(10, 28, 68, 0.55);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(0, 240, 255, 0.12);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(0, 240, 255, 0.45);
+            box-shadow: 0 0 24px rgba(0, 240, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        /* 3D Gold Glow Text */
+        .text-gold-3d {
+            color: #FFD700;
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Neon Buttons */
+        .btn-glow-cyan {
+            background: linear-gradient(135deg, #00F0FF 0%, #0284C7 100%);
+            box-shadow: 0 0 22px rgba(0, 240, 255, 0.45);
+            transition: all 0.25s ease;
+        }
+        .btn-glow-cyan:hover {
+            box-shadow: 0 0 35px rgba(0, 240, 255, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .btn-glow-gold {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            box-shadow: 0 0 22px rgba(245, 158, 11, 0.45);
+            transition: all 0.25s ease;
+        }
+        .btn-glow-gold:hover {
+            box-shadow: 0 0 35px rgba(245, 158, 11, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .btn-glow-emerald {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            box-shadow: 0 0 22px rgba(16, 185, 129, 0.4);
+            transition: all 0.25s ease;
+        }
+        .btn-glow-emerald:hover {
+            box-shadow: 0 0 35px rgba(16, 185, 129, 0.7);
+            transform: translateY(-2px);
+        }
+
+        /* Subtle Floating Wave Animation */
+        @keyframes waveFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-7px) rotate(0.4deg); }
+        }
+        .animate-float {
+            animation: waveFloat 6s ease-in-out infinite;
+        }
+
+        /* Floating Cyber Bubbles Background */
+        .bubble-container {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -10;
+        }
+        .bubble {
+            position: absolute;
+            bottom: -80px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(0, 240, 255, 0.35), rgba(0, 82, 255, 0.1) 70%, transparent 100%);
+            box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.4), 0 0 15px rgba(0, 240, 255, 0.25);
+            animation: rise 14s infinite ease-in;
+        }
+        @keyframes rise {
+            0% {
+                transform: translateY(0) scale(0.6);
+                opacity: 0;
+            }
+            15% { opacity: 0.8; }
+            85% { opacity: 0.8; }
+            100% {
+                transform: translateY(-120vh) scale(1.1);
+                opacity: 0;
+            }
+        }
+        .bubble:nth-child(1) { left: 8%; width: 45px; height: 45px; animation-duration: 12s; animation-delay: 0s; }
+        .bubble:nth-child(2) { left: 22%; width: 25px; height: 25px; animation-duration: 16s; animation-delay: 2s; }
+        .bubble:nth-child(3) { left: 40%; width: 65px; height: 65px; animation-duration: 18s; animation-delay: 4s; }
+        .bubble:nth-child(4) { left: 60%; width: 35px; height: 35px; animation-duration: 13s; animation-delay: 1s; }
+        .bubble:nth-child(5) { left: 78%; width: 50px; height: 50px; animation-duration: 15s; animation-delay: 3s; }
+        .bubble:nth-child(6) { left: 92%; width: 30px; height: 30px; animation-duration: 14s; animation-delay: 5s; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020817; }
+        ::-webkit-scrollbar-thumb { background: #0a1c44; border-radius: 4px; border: 1px solid rgba(0, 240, 255, 0.2); }
+        ::-webkit-scrollbar-thumb:hover { background: #0284C7; }
     </style>
 </head>
-<body class="bg-gradient-to-b from-amber-50 via-white to-gray-50 min-h-screen text-gray-900 font-sans">
+<body class="min-h-screen overflow-x-hidden selection:bg-cyan-500 selection:text-black">
 
-    <!-- Decorative Background -->
-    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-gradient-to-tr from-amber-200 to-yellow-200 blur-3xl opacity-50"></div>
-        <div class="absolute -bottom-28 -right-24 w-96 h-96 rounded-full bg-gradient-to-tr from-yellow-200 to-amber-300 blur-3xl opacity-40"></div>
-        <div class="absolute top-1/3 -right-16 w-64 h-64 rounded-full bg-gradient-to-br from-amber-200 to-orange-200 blur-3xl opacity-30"></div>
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(217,119,6,0.15) 1px, transparent 0); background-size: 24px 24px;"></div>
+    <!-- Atmospheric Cyber Ocean Glows -->
+    <div class="fixed inset-0 pointer-events-none -z-20 overflow-hidden">
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-b from-cyan-glow/25 via-blue-600/20 to-transparent blur-[140px] rounded-full"></div>
+        <div class="absolute top-1/3 -left-48 w-[600px] h-[600px] bg-blue-600/20 blur-[150px] rounded-full"></div>
+        <div class="absolute top-2/3 -right-48 w-[550px] h-[550px] bg-amber-500/15 blur-[150px] rounded-full"></div>
+        <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(circle at 1px 1px, rgba(0, 240, 255, 0.35) 1px, transparent 0); background-size: 32px 32px;"></div>
+    </div>
+
+    <!-- Floating Cyber Bubbles Background (matching banner ocean theme) -->
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
     </div>
 
     <!-- Toast Notification -->
     <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none">
-        <div id="toastContent" class="opacity-0 translate-y-2 transition-all duration-300">
-            <div class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full px-5 py-2.5 shadow-2xl ring-2 ring-amber-300 flex items-center gap-2 font-medium">
-                <span class="text-lg">✨</span>
-                <span id="toastMessage" class="text-sm">Đã sao chép liên kết!</span>
+        <div id="toastContent" class="opacity-0 translate-y-3 transition-all duration-300">
+            <div class="bg-ocean-900/95 backdrop-blur-xl text-white rounded-full px-6 py-3.5 shadow-2xl ring-2 ring-cyan-glow/70 flex items-center gap-3 font-semibold text-sm border border-cyan-glow/50">
+                <span class="text-xl">✨</span>
+                <span id="toastMessage" class="text-cyan-200">Đã sao chép liên kết thành công!</span>
             </div>
         </div>
     </div>
-    
-    <div class="relative z-10 max-w-lg mx-auto px-4 py-10">
-        <!-- Header Card -->
-        <div class="bg-white rounded-3xl p-6 shadow-xl border border-amber-100 text-center mb-6" data-aos="fade-up">
-            <div class="mx-auto mb-4 w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center shadow-lg shadow-amber-200 text-3xl">
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-black/92 backdrop-blur-md hidden items-center justify-center p-4 transition-opacity duration-300" onclick="closeImageModal()">
+        <div class="relative max-w-4xl max-h-[92vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeImageModal()" class="absolute -top-12 right-0 text-gray-300 hover:text-white bg-ocean-800/90 hover:bg-ocean-700 p-2 rounded-full border border-cyan-500/40 transition">
+                <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+            <img id="modalImg" src="" alt="Chi tiết bước cài đặt" class="max-w-full max-h-[82vh] object-contain rounded-2xl shadow-2xl border-2 border-cyan-glow/50">
+            <p id="modalCaption" class="text-center text-sm font-semibold text-cyan-300 mt-3.5 px-4 py-1.5 rounded-full bg-ocean-900/80 border border-cyan-500/30"></p>
+        </div>
+    </div>
+
+    <!-- Top Navigation Header -->
+    <header class="sticky top-0 z-40 bg-ocean-950/85 backdrop-blur-xl border-b border-cyan-glow/20">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="https://dalymmo.com" target="_blank" class="flex items-center gap-2.5 group">
+                <span class="text-2xl group-hover:scale-110 transition duration-300">🐳</span>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-display font-black text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-glow via-blue-400 to-amber-400">LAMDev</span>
+                        <span class="text-[10px] text-cyan-300 font-mono border border-cyan-500/40 bg-cyan-500/10 px-2 py-0.5 rounded-full font-bold">VIP GOLD</span>
+                    </div>
+                    <span class="text-[10px] text-gray-400 font-mono hidden sm:inline-block">dalymmo.com • @dalymmocom</span>
+                </div>
+            </a>
+            
+            <div class="flex items-center gap-2">
+                <a href="https://t.me/dalymmocom" target="_blank" class="text-xs bg-ocean-800/90 hover:bg-ocean-700 text-cyan-300 font-semibold px-3.5 py-1.5 rounded-xl border border-cyan-500/40 flex items-center gap-1.5 transition shadow-sm hover:shadow-cyan-glow/30">
+                    <i data-feather="send" class="w-3.5 h-3.5 text-cyan-glow"></i>
+                    <span>Kênh Hỗ Trợ</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 py-6 space-y-8">
+
+        <!-- Hero Section with banner.png and Cyber Pill Badges -->
+        <section class="relative rounded-3xl overflow-hidden glass-panel border border-cyan-500/30 p-2 sm:p-3 shadow-2xl" data-aos="fade-up">
+            <!-- Banner Image with Subtle Float Effect -->
+            <div class="rounded-2xl overflow-hidden relative shadow-inner cursor-pointer" onclick="openImageModal('./assets/banner.png', 'Nâng Locket Gold bằng Shadowrocket - LAMDev')">
+                <img src="./assets/banner.png" alt="Nâng Locket Gold bằng Shadowrocket - LAMDev" class="w-full h-auto object-cover rounded-2xl animate-float">
+            </div>
+
+            <!-- Whale Slogan Quote from Banner -->
+            <div class="flex items-center justify-between flex-wrap gap-2 mt-3 px-2">
+                <div class="flex items-center gap-2 text-xs text-cyan-300/90 italic font-mono">
+                    <span class="text-base">🐳</span>
+                    <span>&ldquo;Bug còn chạy không phải là lỗi, mà là tính năng&rdquo;</span>
+                </div>
+                <div class="flex items-center gap-2 text-[11px] text-gray-400 font-mono">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Shadowrocket v2.2+ Ready</span>
+                </div>
+            </div>
+
+            <!-- 4 Cyber Feature Pills + Dalymmo Link (Exactly matching banner bottom row) -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 mt-3 px-1">
+                <!-- 1: TỰ ĐỘNG -->
+                <div class="glass-card rounded-xl p-2.5 flex items-center gap-2 border border-cyan-500/30 hover:border-cyan-glow">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-glow/15 border border-cyan-glow/40 flex items-center justify-center shrink-0 text-cyan-glow">
+                        <i data-feather="zap" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-black text-white uppercase tracking-wider">Tự Động</div>
+                        <div class="text-[10px] text-cyan-300/80">Nhanh chóng</div>
+                    </div>
+                </div>
+
+                <!-- 2: ĐƠN GIẢN -->
+                <div class="glass-card rounded-xl p-2.5 flex items-center gap-2 border border-blue-500/30 hover:border-blue-400">
+                    <div class="w-8 h-8 rounded-lg bg-blue-500/15 border border-blue-400/40 flex items-center justify-center shrink-0 text-blue-400">
+                        <i data-feather="settings" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-black text-white uppercase tracking-wider">Đơn Giản</div>
+                        <div class="text-[10px] text-blue-300/80">Dễ sử dụng</div>
+                    </div>
+                </div>
+
+                <!-- 3: MIỄN PHÍ -->
+                <div class="glass-card rounded-xl p-2.5 flex items-center gap-2 border border-amber-500/30 hover:border-amber-400">
+                    <div class="w-8 h-8 rounded-lg bg-amber-500/15 border border-amber-400/40 flex items-center justify-center shrink-0 text-amber-400">
+                        <i data-feather="gift" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-black text-white uppercase tracking-wider">Miễn Phí</div>
+                        <div class="text-[10px] text-amber-300/80">100% Free</div>
+                    </div>
+                </div>
+
+                <!-- 4: AN TOÀN -->
+                <div class="glass-card rounded-xl p-2.5 flex items-center gap-2 border border-emerald-500/30 hover:border-emerald-400">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center shrink-0 text-emerald-400">
+                        <i data-feather="shield" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-black text-white uppercase tracking-wider">An Toàn</div>
+                        <div class="text-[10px] text-emerald-300/80">Ổn định</div>
+                    </div>
+                </div>
+
+                <!-- 5: DALYMMO.COM (From Banner) -->
+                <a href="https://dalymmo.com" target="_blank" class="glass-card rounded-xl p-2.5 flex items-center gap-2 border border-cyan-500/40 hover:border-cyan-glow bg-gradient-to-r from-cyan-glow/10 to-blue-600/10 col-span-2 sm:col-span-1 group">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-glow/20 border border-cyan-glow/50 flex items-center justify-center shrink-0 text-cyan-glow group-hover:scale-110 transition">
+                        <i data-feather="globe" class="w-4 h-4"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="text-xs font-black text-cyan-300 truncate">dalymmo.com</div>
+                        <div class="text-[10px] text-gray-300 flex items-center gap-1">
+                            <span>Truy cập</span>
+                            <span class="text-cyan-glow">↗</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 🌟 Giới thiệu (Full Intro from README.md) -->
+        <section class="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl border border-cyan-500/25 flex flex-col sm:flex-row items-center gap-6" data-aos="fade-up">
+            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center text-4xl shadow-xl shadow-amber-500/30 shrink-0 border border-amber-300/40 animate-pulse">
                 💛
             </div>
-            <h1 class="text-3xl font-extrabold mb-1 tracking-tight text-gray-900">
-                Locket Gold <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-600">VIP</span>
-            </h1>
-            <p class="text-sm text-gray-600 mb-3">Mở khóa tính năng VIP cho iPhone qua <span class="font-bold text-amber-600">Shadowrocket</span></p>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-semibold text-amber-800">
-                <span>🛡️ Phát hành bởi LAMDev</span>
-                <span>•</span>
-                <a href="https://dalymmo.com" target="_blank" class="hover:underline">dalymmo.com</a>
-            </div>
-        </div>
-
-        <!-- 1-Click Fast Actions -->
-        <div class="space-y-5" data-aos="fade-up" data-aos-delay="100">
-            <!-- Section Links -->
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-gray-100 space-y-4">
-                <h2 class="text-lg font-bold flex items-center text-gray-900">
-                    <i data-feather="zap" class="mr-2 text-amber-500"></i> Cài Đặt Nhanh 1-Click
+            <div class="space-y-2 text-center sm:text-left">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/35 text-xs font-bold text-cyan-300 tracking-wide uppercase">
+                    ✨ Tinh gọn 100% dành riêng cho ứng dụng Locket
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-display font-black text-white">
+                    Bộ Giải Pháp Mở Khóa <span class="text-gold-3d">Locket Gold VIP</span>
                 </h2>
+                <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                    <strong class="text-white">LocketLAM</strong> là bộ giải pháp mở khóa Locket Gold chuyên nghiệp do <strong class="text-cyan-glow">LAMDev</strong> phát triển, tinh gọn <strong class="text-cyan-glow">100% dành riêng cho ứng dụng Locket</strong>, loại bỏ toàn bộ các thành phần dư thừa của các ứng dụng khác giúp hệ thống hoạt động nhẹ nhất, mượt nhất và ổn định nhất.
+                </p>
+                <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                    Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện từ giao diện, camera, dung lượng bộ nhớ cho tới các quyền hạn cao cấp trên hệ thống. Kèm theo đó là giải pháp <strong class="text-amber-400">DNS Chống thu hồi độc quyền từ DalyMMO</strong> giúp bạn giữ trạng thái Gold vĩnh viễn mà không cần phải bật VPN liên tục.
+                </p>
+            </div>
+        </section>
 
-                <!-- Notice -->
-                <div class="rounded-xl p-3.5 border border-amber-200 bg-amber-50/80 text-xs text-amber-900 flex items-start gap-3">
-                    <i data-feather="info" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
-                    <div>
-                        <p class="font-bold mb-0.5">Lưu ý khi sử dụng:</p>
-                        <p>Bấm vào các nút xanh bên dưới, iPhone sẽ tự động mở ứng dụng Shadowrocket để nạp cấu hình ngay lập tức.</p>
-                    </div>
+        <!-- 🚀 Cài Đặt Nhanh 1-Click (Dành Cho iOS) -->
+        <section id="install" class="glass-panel rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-cyan-glow/50 space-y-6 relative overflow-hidden" data-aos="fade-up">
+            <!-- Neon background splash -->
+            <div class="absolute -top-24 right-0 w-80 h-80 bg-cyan-glow/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-gray-800 pb-4">
+                <div>
+                    <h3 class="text-2xl font-display font-black text-white flex items-center gap-2">
+                        <span class="text-amber-400 text-3xl">⚡</span> Cài Đặt Nhanh 1-Click (Dành Cho iOS)
+                    </h3>
+                    <p class="text-xs text-gray-300 mt-1">
+                        💡 <strong>Mẹo:</strong> Trên Safari iPhone, bấm trực tiếp vào nút bên dưới để iPhone tự động mở ứng dụng <strong>Shadowrocket</strong> nạp cấu hình ngay lập tức!
+                    </p>
                 </div>
+                <span class="text-xs px-3.5 py-1.5 rounded-xl bg-blue-500/20 text-cyan-300 border border-cyan-500/40 font-mono shrink-0 self-start sm:self-auto font-bold">
+                    🚀 iOS Safari 1-Touch
+                </span>
+            </div>
 
-                <!-- 1. Module (Recommended) -->
-                <div class="p-3.5 rounded-xl border border-blue-100 bg-blue-50/40">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="text-xs font-bold text-blue-900 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-blue-500"></span> Module Locket (.sgmodule) <span class="text-xs text-blue-600 font-normal">(Khuyên Dùng)</span>
-                        </span>
-                        <button class="copy-btn text-xs bg-blue-100 hover:bg-blue-200 text-blue-800 px-2.5 py-1 rounded-md transition flex items-center gap-1 font-semibold" onclick="copyToClipboard('https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule')">
-                            <i data-feather="copy" class="w-3 h-3"></i> Chép Link
-                        </button>
+            <!-- Action 1: Module Locket (.sgmodule) (Khuyên Dùng) -->
+            <div class="glass-card rounded-2xl p-4 sm:p-5 border-2 border-cyan-500/40 hover:border-cyan-glow transition space-y-3 bg-gradient-to-r from-cyan-glow/5 to-transparent">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-3.5 h-3.5 rounded-full bg-cyan-glow animate-ping"></span>
+                        <div>
+                            <span class="font-extrabold text-white text-base">Cài Đặt Module Locket (.sgmodule)</span>
+                            <span class="ml-2 text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/25 text-cyan-300 font-bold border border-cyan-500/40">Khuyên Dùng</span>
+                        </div>
                     </div>
-                    <a href="shadowrocket://install?module=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule" class="btn-action w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md shadow-blue-200 transition inline-flex items-center justify-center gap-2 text-sm">
-                        <i data-feather="download-cloud" class="w-4 h-4"></i>
-                        <span>Cài Đặt Module Vào Shadowrocket</span>
+                    <button class="text-xs bg-ocean-800 hover:bg-ocean-700 text-cyan-300 px-3 py-1.5 rounded-lg border border-cyan-500/30 font-semibold flex items-center gap-1.5 transition self-start sm:self-auto" onclick="copyToClipboard('https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule')">
+                        <i data-feather="copy" class="w-3.5 h-3.5"></i> Chép Link Module
+                    </button>
+                </div>
+                <p class="text-xs text-gray-300">Tự động cấu hình kịch bản bẻ khóa RevenueCat, Remote Config và khóa huy hiệu Gold vĩnh viễn.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                    <a href="shadowrocket://install?module=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule" class="btn-glow-cyan text-black font-black py-3.5 px-5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base tracking-wide">
+                        <i data-feather="download" class="w-5 h-5"></i>
+                        <span>Bấm Để Cài Module Vào Shadowrocket</span>
                     </a>
-                </div>
-
-                <!-- 2. Config -->
-                <div class="p-3.5 rounded-xl border border-emerald-100 bg-emerald-50/40">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="text-xs font-bold text-emerald-900 flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Config Locket (.conf)
-                        </span>
-                        <button class="copy-btn text-xs bg-emerald-100 hover:bg-emerald-200 text-emerald-800 px-2.5 py-1 rounded-md transition flex items-center gap-1 font-semibold" onclick="copyToClipboard('https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf')">
-                            <i data-feather="copy" class="w-3 h-3"></i> Chép Link
-                        </button>
-                    </div>
-                    <a href="shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf" class="btn-action w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md shadow-emerald-200 transition inline-flex items-center justify-center gap-2 text-sm">
-                        <i data-feather="plus-circle" class="w-4 h-4"></i>
-                        <span>Thêm Config Vào Shadowrocket</span>
-                    </a>
-                </div>
-
-                <!-- 3. Direct Profile Download -->
-                <div class="pt-2 border-t border-gray-100">
-                    <a href="https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig" download="locketlam.mobileconfig" class="btn-action w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white font-bold py-2.5 px-4 rounded-xl shadow-md shadow-amber-200 transition inline-flex items-center justify-center gap-2 text-sm">
-                        <i data-feather="shield" class="w-4 h-4 text-white"></i>
-                        <span>Tải Cấu Hình DNS Chống Thu Hồi (.mobileconfig)</span>
+                    <a href="https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/module.html" target="_blank" class="bg-ocean-800/80 hover:bg-ocean-700 text-cyan-300 font-bold py-3.5 px-4 rounded-xl border border-cyan-500/40 flex items-center justify-center gap-2 text-sm transition">
+                        <i data-feather="external-link" class="w-4 h-4"></i>
+                        <span>Mở Link Chuyển Hướng (module.html)</span>
                     </a>
                 </div>
             </div>
 
-            <!-- Features Unlocked -->
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="text-base font-bold flex items-center text-gray-900 mb-3">
-                    <i data-feather="check-circle" class="mr-2 text-amber-500"></i> Tính Năng Mở Khóa Độc Quyền
-                </h2>
-                <div class="grid grid-cols-2 gap-2.5 text-xs text-gray-700">
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 border border-gray-100">
-                        <span class="text-base">📹</span> <span class="font-medium">Video dài 60 Giây</span>
+            <!-- Action 2: Config Locket (.conf) -->
+            <div class="glass-card rounded-2xl p-4 sm:p-5 border border-emerald-500/40 hover:border-emerald-400 transition space-y-3">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-3.5 h-3.5 rounded-full bg-emerald-400"></span>
+                        <span class="font-extrabold text-white text-base">Thêm Cấu Hình Config Locket (.conf)</span>
                     </div>
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 border border-gray-100">
-                        <span class="text-base">📸</span> <span class="font-medium">Ảnh 2K HD Siêu Nét</span>
-                    </div>
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 border border-gray-100">
-                        <span class="text-base">💛</span> <span class="font-medium">Huy Hiệu Gold Vĩnh Viễn</span>
-                    </div>
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 border border-gray-100">
-                        <span class="text-base">🚫</span> <span class="font-medium">Sạch 100% Quảng Cáo</span>
-                    </div>
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 border border-gray-100">
-                        <span class="text-base">🖼️</span> <span class="font-medium">Khung Widget Cao Cấp</span>
-                    </div>
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-gray-50 border border-gray-100">
-                        <span class="text-base">🔄</span> <span class="font-medium">Khôi Phục Chuỗi Bạn Bè</span>
-                    </div>
+                    <button class="text-xs bg-ocean-800 hover:bg-ocean-700 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-500/30 font-semibold flex items-center gap-1.5 transition self-start sm:self-auto" onclick="copyToClipboard('https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf')">
+                        <i data-feather="copy" class="w-3.5 h-3.5"></i> Chép Link Config
+                    </button>
+                </div>
+                <p class="text-xs text-gray-300">Dùng khi bạn muốn thêm trọn bộ file cấu hình `.conf` riêng biệt vào Shadowrocket.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                    <a href="shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf" class="btn-glow-emerald text-white font-black py-3.5 px-5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base tracking-wide">
+                        <i data-feather="plus-circle" class="w-5 h-5"></i>
+                        <span>Bấm Để Thêm Config Vào Shadowrocket</span>
+                    </a>
+                    <a href="https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/conf.html" target="_blank" class="bg-ocean-800/80 hover:bg-ocean-700 text-emerald-300 font-bold py-3.5 px-4 rounded-xl border border-emerald-500/40 flex items-center justify-center gap-2 text-sm transition">
+                        <i data-feather="external-link" class="w-4 h-4"></i>
+                        <span>Mở Link Chuyển Hướng (conf.html)</span>
+                    </a>
                 </div>
             </div>
 
-            <!-- 7-Step Guide -->
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
-                <h2 class="text-base font-bold flex items-center text-gray-900 mb-4">
-                    <i data-feather="list" class="mr-2 text-amber-500"></i> Các Bước Kích Hoạt
-                </h2>
-                <ol class="space-y-3.5 text-xs text-gray-700 list-decimal list-inside font-medium">
-                    <li>Bấm nút <span class="font-bold text-blue-600">Cài Đặt Module</span> ở trên để nạp vào Shadowrocket.</li>
-                    <li>Vào mục <span class="font-bold text-gray-900">Cấu hình</span> ➔ bấm chữ <b>(i)</b> cạnh file cấu hình ➔ Bật <span class="font-bold text-amber-600">Giải mã HTTPS</span>.</li>
-                    <li>Chọn <span class="font-bold text-gray-900">Tạo Chứng chỉ CA mới</span> ➔ Cài đặt chứng chỉ vào iPhone.</li>
-                    <li>Vào <span class="font-bold text-gray-900">Cài đặt máy ➔ Cài đặt chung ➔ Giới thiệu ➔ Cài đặt tin cậy chứng nhận</span> ➔ Bật tin cậy chứng chỉ Shadowrocket.</li>
-                    <li>Bật kết nối VPN trong Shadowrocket, sau đó vuốt tắt hẳn app Locket chạy ngầm và mở lại để tận hưởng Locket Gold VIP!</li>
-                </ol>
+            <!-- Action 3: Hồ Sơ DNS Chống Thu Hồi (.mobileconfig) -->
+            <div class="glass-card rounded-2xl p-4 sm:p-5 border-2 border-amber-500/50 hover:border-amber-400 transition space-y-3 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                        <span class="text-2xl">🛡️</span>
+                        <div>
+                            <span class="font-black text-white text-base">Tải Hồ Sơ DNS Chống Thu Hồi Về iPhone (.mobileconfig)</span>
+                            <div class="text-[11px] text-amber-300 font-medium">Không hao pin • Không cần bật VPN liên tục • Split DNS tốc độ cao</div>
+                        </div>
+                    </div>
+                    <button class="text-xs bg-ocean-800 hover:bg-ocean-700 text-amber-300 px-3 py-1.5 rounded-lg border border-amber-500/30 font-semibold flex items-center gap-1.5 transition self-start sm:self-auto" onclick="copyToClipboard('https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig')">
+                        <i data-feather="copy" class="w-3.5 h-3.5"></i> Chép Link DNS
+                    </button>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed">
+                    Bấm vào nút tải bên dưới bằng trình duyệt <strong>Safari trên iPhone</strong>. Hệ thống sẽ tự động tải file `.mobileconfig` và hiển thị thông báo <em>"Đã tải về hồ sơ"</em>. Sau đó vào <strong>Cài đặt ➔ Đã tải về hồ sơ ➔ Cài đặt</strong> là hoàn tất!
+                </p>
+                <a href="https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig" download="locketlam.mobileconfig" class="btn-glow-gold w-full text-black font-black py-4 px-6 rounded-xl shadow-xl flex items-center justify-center gap-2.5 text-base tracking-wide">
+                    <i data-feather="download-cloud" class="w-5 h-5"></i>
+                    <span>Tải Hồ Sơ locketlam.mobileconfig Về iPhone</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 📋 Bảng Sao Chép Thủ Công (Strictly from README.md) -->
+        <section class="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl border border-cyan-500/25 space-y-4" data-aos="fade-up">
+            <div class="border-b border-gray-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <h3 class="text-xl font-display font-black text-white flex items-center gap-2">
+                        <span class="text-cyan-glow">📋</span> Bảng Sao Chép Thủ Công
+                    </h3>
+                    <p class="text-xs text-gray-400">Dán thủ công vào Tab Cấu Hình / Module của Shadowrocket hoặc trình duyệt</p>
+                </div>
+                <span class="text-[11px] text-cyan-300 font-mono bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded-full self-start sm:self-auto">
+                    3 File Cấu Hình Chính
+                </span>
             </div>
 
-            <!-- Footer -->
-            <div class="text-center text-xs text-gray-500 py-4 space-y-1">
-                <p>Phát triển bởi <a href="https://dalymmo.com" target="_blank" class="font-bold text-amber-600 hover:underline">LAMDev</a> • Kênh hỗ trợ: <a href="https://t.me/dalymmocom" target="_blank" class="font-bold text-blue-600 hover:underline">@dalymmocom</a></p>
-                <p>© 2026 dalymmo.com. Toàn quyền bảo lưu.</p>
-            </div>
-        </div>
-    </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs text-gray-300 border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-800 text-gray-400 font-mono text-[11px] uppercase">
+                            <th class="py-3 px-3">Mục cài đặt</th>
+                            <th class="py-3 px-3">Thao tác 1-Click</th>
+                            <th class="py-3 px-3">Liên kết chép thủ công</th>
+                            <th class="py-3 px-3 text-right">Sao chép</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800/60 font-sans">
+                        <!-- Row 1 -->
+                        <tr class="hover:bg-ocean-800/40 transition">
+                            <td class="py-3 px-3 font-bold text-white flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-cyan-glow"></span>
+                                Module Locket (.sgmodule)
+                            </td>
+                            <td class="py-3 px-3">
+                                <a href="https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/module.html" target="_blank" class="text-cyan-glow hover:underline font-bold inline-flex items-center gap-1">
+                                    ⚡ Cài đặt Module ↗
+                                </a>
+                            </td>
+                            <td class="py-3 px-3 font-mono text-[11px] text-gray-400 max-w-xs truncate">
+                                https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule
+                            </td>
+                            <td class="py-3 px-3 text-right">
+                                <button onclick="copyToClipboard('https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule')" class="bg-ocean-800 hover:bg-ocean-700 text-cyan-300 px-2.5 py-1 rounded-lg border border-cyan-500/30 text-[11px] font-semibold">
+                                    Chép
+                                </button>
+                            </td>
+                        </tr>
 
+                        <!-- Row 2 -->
+                        <tr class="hover:bg-ocean-800/40 transition">
+                            <td class="py-3 px-3 font-bold text-white flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                Config Locket (.conf)
+                            </td>
+                            <td class="py-3 px-3">
+                                <a href="https://raw.githack.com/leanhminh2104/locketlam/shadowrocket/conf.html" target="_blank" class="text-emerald-400 hover:underline font-bold inline-flex items-center gap-1">
+                                    🚀 Thêm Config ↗
+                                </a>
+                            </td>
+                            <td class="py-3 px-3 font-mono text-[11px] text-gray-400 max-w-xs truncate">
+                                https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf
+                            </td>
+                            <td class="py-3 px-3 text-right">
+                                <button onclick="copyToClipboard('https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf')" class="bg-ocean-800 hover:bg-ocean-700 text-emerald-300 px-2.5 py-1 rounded-lg border border-emerald-500/30 text-[11px] font-semibold">
+                                    Chép
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="hover:bg-ocean-800/40 transition">
+                            <td class="py-3 px-3 font-bold text-white flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                                Hồ sơ DNS (.mobileconfig)
+                            </td>
+                            <td class="py-3 px-3">
+                                <a href="https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig" download="locketlam.mobileconfig" class="text-amber-400 hover:underline font-bold inline-flex items-center gap-1">
+                                    🛡️ Tải Profile DNS ↗
+                                </a>
+                            </td>
+                            <td class="py-3 px-3 font-mono text-[11px] text-gray-400 max-w-xs truncate">
+                                https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig
+                            </td>
+                            <td class="py-3 px-3 text-right">
+                                <button onclick="copyToClipboard('https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig')" class="bg-ocean-800 hover:bg-ocean-700 text-amber-300 px-2.5 py-1 rounded-lg border border-amber-500/30 text-[11px] font-semibold">
+                                    Chép
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ✨ Danh Sách Toàn Bộ Tính Năng Mở Khóa (Full 9 Features from README.md) -->
+        <section class="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl border border-cyan-500/25 space-y-5" data-aos="fade-up">
+            <div class="border-b border-gray-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <h3 class="text-xl font-display font-black text-white flex items-center gap-2">
+                        <span class="text-cyan-glow">✨</span> Danh Sách Toàn Bộ Tính Năng Mở Khóa
+                    </h3>
+                    <p class="text-xs text-gray-400">Chi tiết 9 đặc quyền VIP Locket Gold cao cấp nhất</p>
+                </div>
+                <span class="text-xs font-mono text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full self-start sm:self-auto font-bold">
+                    9/9 Features Unlocked 💛
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                <!-- 1: Gói VIP -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-xl shrink-0">💛</div>
+                        <div>
+                            <span class="text-[10px] text-amber-400 font-mono font-bold uppercase">Gói VIP</span>
+                            <h4 class="font-bold text-white text-sm">Gói Locket Gold 1 Năm</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Mở khóa gói đăng ký Locket Gold VIP 1 năm (Gia hạn tự động vĩnh viễn đến năm 9999).</p>
+                </div>
+
+                <!-- 2: Hồ sơ & Huy hiệu -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-glow/15 border border-cyan-glow/30 flex items-center justify-center text-xl shrink-0">👑</div>
+                        <div>
+                            <span class="text-[10px] text-cyan-glow font-mono font-bold uppercase">Hồ sơ & Huy hiệu</span>
+                            <h4 class="font-bold text-white text-sm">Huy Hiệu Gold Badge</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Huy hiệu vàng Gold Badge danh giá hiển thị trên trang cá nhân và bài đăng.</p>
+                </div>
+
+                <!-- 3: Giao diện & Icon -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-xl shrink-0">🎨</div>
+                        <div>
+                            <span class="text-[10px] text-blue-400 font-mono font-bold uppercase">Giao diện & Icon</span>
+                            <h4 class="font-bold text-white text-sm">App Icon & Camera Themes</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Toàn quyền chọn tất cả App Icon độc quyền và Chủ đề máy ảnh (Camera Themes).</p>
+                </div>
+
+                <!-- 4: Đăng tải & Camera -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-xl shrink-0">📹</div>
+                        <div>
+                            <span class="text-[10px] text-purple-400 font-mono font-bold uppercase">Đăng tải & Camera</span>
+                            <h4 class="font-bold text-white text-sm">Tải Album & Video 60s</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Tải ảnh trực tiếp từ Album/Thư viện (Camera Roll) không giới hạn; quay video dài 60s.</p>
+                </div>
+
+                <!-- 5: Tương tác & Xem -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-xl shrink-0">👀</div>
+                        <div>
+                            <span class="text-[10px] text-pink-400 font-mono font-bold uppercase">Tương tác & Xem</span>
+                            <h4 class="font-bold text-white text-sm">Locket Views</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Mở khóa tính năng Locket Views (Biết chính xác người bạn nào đã xem bài đăng của bạn).</p>
+                </div>
+
+                <!-- 6: Chú thích & Bạn bè -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-xl shrink-0">💬</div>
+                        <div>
+                            <span class="text-[10px] text-teal-400 font-mono font-bold uppercase">Chú thích & Bạn bè</span>
+                            <h4 class="font-bold text-white text-sm">Chú Thích Dài & Vô Hạn Bạn</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Viết chú thích dài (Long Captions) không bị giới hạn ký tự; kết bạn không giới hạn số lượng.</p>
+                </div>
+
+                <!-- 7: Tiện ích (Widgets) -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center text-xl shrink-0">🖼️</div>
+                        <div>
+                            <span class="text-[10px] text-indigo-400 font-mono font-bold uppercase">Tiện ích (Widgets)</span>
+                            <h4 class="font-bold text-white text-sm">Khung Viền Widget Cao Cấp</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Toàn quyền sử dụng tất cả Khung viền Widget (Custom Widget Frames) cao cấp ngoài màn hình chính.</p>
+                </div>
+
+                <!-- 8: Chuỗi bạn bè -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-xl shrink-0">🔥</div>
+                        <div>
+                            <span class="text-[10px] text-orange-400 font-mono font-bold uppercase">Chuỗi bạn bè</span>
+                            <h4 class="font-bold text-white text-sm">Khôi Phục Chuỗi (Streak)</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Tự động kích hoạt tính năng Khôi phục chuỗi (Streak Recovery) khi lỡ quên gửi locket.</p>
+                </div>
+
+                <!-- 9: Trải nghiệm -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800/80 flex flex-col justify-between space-y-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-red-500/15 border border-red-500/30 flex items-center justify-center text-xl shrink-0">🚫</div>
+                        <div>
+                            <span class="text-[10px] text-red-400 font-mono font-bold uppercase">Trải nghiệm</span>
+                            <h4 class="font-bold text-white text-sm">Xóa Sạch 100% Quảng Cáo</h4>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">Xóa sạch 100% quảng cáo và các pop-up mời chào mua gói phiền phức.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 📖 Hướng Dẫn Chi Tiết Bằng Hình Ảnh (7 Bước A - Z) -->
+        <section id="guide" class="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl border border-cyan-500/25 space-y-7" data-aos="fade-up">
+            <div class="border-b border-gray-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <h3 class="text-xl font-display font-black text-white flex items-center gap-2">
+                        <span class="text-cyan-glow">📖</span> Hướng Dẫn Chi Tiết Bằng Hình Ảnh (7 Bước A - Z)
+                    </h3>
+                    <p class="text-xs text-gray-400">💡 Chạm vào bất kỳ ảnh nào để phóng to xem rõ nét</p>
+                </div>
+                <span class="text-xs text-amber-300 font-mono bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full self-start sm:self-auto font-bold">
+                    Dành cho Shadowrocket iOS
+                </span>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Bước 1 -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border border-gray-800/90 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-cyan-glow/20 text-cyan-glow font-display font-black flex items-center justify-center text-sm border border-cyan-glow/40">1</span>
+                        <h4 class="font-bold text-white text-base">Bước 1: Tải và cài đặt ứng dụng Shadowrocket</h4>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Mở App Store trên iPhone, tìm kiếm từ khóa <code class="text-cyan-glow font-mono">Shadowrocket</code> và bấm tải về.</li>
+                        <li><em>(Nếu chưa có tài khoản đã mua Shadowrocket, bạn có thể tìm kiếm các tài khoản chia sẻ miễn phí trên mạng hoặc cài đặt qua tệp IPA).</em></li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-gray-800 max-w-sm cursor-pointer hover:border-cyan-glow/60 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step1_download.jpg', 'Bước 1: Tải và cài đặt ứng dụng Shadowrocket')">
+                            <img src="./assets/steps/step1_download.jpg" alt="Bước 1: Tải Shadowrocket" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-cyan-glow font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 2 -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border border-gray-800/90 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-cyan-glow/20 text-cyan-glow font-display font-black flex items-center justify-center text-sm border border-cyan-glow/40">2</span>
+                        <h4 class="font-bold text-white text-base">Bước 2: Thêm Module hoặc Cấu hình vào Shadowrocket</h4>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Bấm vào nút cài đặt nhanh ở mục <strong>Cài đặt nhanh 1-Click</strong> phía trên trình duyệt iPhone.</li>
+                        <li>Hệ thống sẽ hiện hộp thoại xác nhận <strong>Mở trong “Shadowrocket”?</strong> ➔ Bấm <strong>Mở</strong>.</li>
+                        <li>Trong Shadowrocket: cấu hình <code class="text-cyan-glow font-mono">locketlam.conf</code> đã được thêm tự động, chạm vào và bấm <strong>Sử dụng Config</strong>.</li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-gray-800 max-w-sm cursor-pointer hover:border-cyan-glow/60 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step2_add_config.jpg', 'Bước 2: Thêm Module hoặc Cấu hình vào Shadowrocket')">
+                            <img src="./assets/steps/step2_add_config.jpg" alt="Bước 2: Thêm cấu hình" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-cyan-glow font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 3 -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border border-gray-800/90 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-cyan-glow/20 text-cyan-glow font-display font-black flex items-center justify-center text-sm border border-cyan-glow/40">3</span>
+                        <h4 class="font-bold text-white text-base">Bước 3: Kích hoạt Giải mã HTTPS (HTTPS Decryption)</h4>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Tại tab <strong>Cấu hình</strong>, bấm vào biểu tượng chữ <strong>(i)</strong> màu xanh bên cạnh file cấu hình <code class="text-cyan-glow font-mono">locketlam.conf</code>.</li>
+                        <li>Tìm đến mục <strong>Giải mã HTTPS (HTTPS Decryption)</strong> và gạt công tắc sang <strong>BẬT (Màu xanh)</strong>.</li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-gray-800 max-w-sm cursor-pointer hover:border-cyan-glow/60 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step3_enable_https.jpg', 'Bước 3: Bật Giải mã HTTPS (HTTPS Decryption)')">
+                            <img src="./assets/steps/step3_enable_https.jpg" alt="Bước 3: Bật Giải mã HTTPS" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-cyan-glow font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 4 -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border border-gray-800/90 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-cyan-glow/20 text-cyan-glow font-display font-black flex items-center justify-center text-sm border border-cyan-glow/40">4</span>
+                        <h4 class="font-bold text-white text-base">Bước 4: Tạo và tải Chứng chỉ CA mới</h4>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Trong mục Chứng chỉ CA: bấm vào dòng <strong>Tạo Chứng chỉ CA mới</strong> ➔ Bấm xác nhận <strong>Tạo Chứng chỉ CA mới</strong>.</li>
+                        <li>Bấm tiếp dòng <strong>Cài đặt Chứng chỉ CA vào hệ thống</strong> ➔ Trình duyệt Safari sẽ hiện thông báo, bấm <strong>Cho phép</strong> để tải hồ sơ chứng chỉ về máy.</li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-gray-800 max-w-sm cursor-pointer hover:border-cyan-glow/60 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step4_generate_ca.jpg', 'Bước 4: Tạo và tải Chứng chỉ CA mới')">
+                            <img src="./assets/steps/step4_generate_ca.jpg" alt="Bước 4: Tạo và tải Chứng chỉ CA" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-cyan-glow font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 5 -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border border-gray-800/90 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-cyan-glow/20 text-cyan-glow font-display font-black flex items-center justify-center text-sm border border-cyan-glow/40">5</span>
+                        <h4 class="font-bold text-white text-base">Bước 5: Cài đặt hồ sơ chứng chỉ vào iPhone</h4>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Mở ứng dụng <strong>Cài đặt</strong> của iPhone ➔ Chọn mục <strong>Đã tải về hồ sơ</strong> ở trên cùng (hoặc vào <em>Cài đặt chung ➔ Quản lý VPN & thiết bị</em>).</li>
+                        <li>Chọn hồ sơ chứng chỉ Shadowrocket vừa tải về ➔ Bấm nút <strong>Cài đặt</strong> ở góc trên bên phải màn hình và nhập mật mã máy nếu có.</li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-gray-800 max-w-sm cursor-pointer hover:border-cyan-glow/60 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step5_install_profile.jpg', 'Bước 5: Cài đặt hồ sơ chứng chỉ vào iPhone')">
+                            <img src="./assets/steps/step5_install_profile.jpg" alt="Bước 5: Cài đặt hồ sơ vào iPhone" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-cyan-glow font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 6 (Quan Trọng Nhất) -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border-2 border-amber-500/50 space-y-3 bg-gradient-to-r from-amber-500/10 to-transparent">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 font-display font-black flex items-center justify-center text-sm border border-amber-500/40">6</span>
+                        <div>
+                            <h4 class="font-bold text-amber-300 text-base">Bước 6: Bật quyền tin cậy chứng nhận gốc</h4>
+                            <span class="text-[11px] text-amber-400 font-bold uppercase tracking-wider">⚠️ BƯỚC QUAN TRỌNG NHẤT ĐỂ KÍCH HOẠT LOCKET GOLD</span>
+                        </div>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Vào <strong>Cài đặt ➔ Cài đặt chung ➔ Giới thiệu</strong>.</li>
+                        <li>Kéo xuống dưới cùng, chọn dòng <strong>Cài đặt tin cậy chứng nhận</strong>.</li>
+                        <li>Tại mục <em>Bật tin cậy đầy đủ cho chứng nhận gốc</em>, gạt công tắc chứng chỉ <strong>Shadowrocket</strong> sang <strong>BẬT (Màu xanh)</strong> ➔ Hiện bảng cảnh báo, bấm <strong>Tiếp tục</strong>.</li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-amber-500/40 max-w-sm cursor-pointer hover:border-amber-400 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step6_trust_cert.jpg', 'Bước 6: Bật quyền tin cậy chứng nhận gốc (Bắt buộc)')">
+                            <img src="./assets/steps/step6_trust_cert.jpg" alt="Bước 6: Bật tin cậy chứng chỉ" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-amber-300 font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 7 -->
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border-2 border-emerald-500/50 space-y-3 bg-gradient-to-r from-emerald-500/10 to-transparent">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 font-display font-black flex items-center justify-center text-sm border border-emerald-500/40">7</span>
+                        <div>
+                            <h4 class="font-bold text-emerald-300 text-base">Bước 7: Bật kết nối VPN và tận hưởng Locket Gold</h4>
+                            <span class="text-[11px] text-emerald-400 font-bold uppercase tracking-wider">🎉 KÍCH HOẠT THÀNH CÔNG VĨNH VIỄN</span>
+                        </div>
+                    </div>
+                    <ul class="text-xs text-gray-300 pl-11 space-y-1 list-disc list-inside">
+                        <li>Quay lại ứng dụng Shadowrocket, tại tab <strong>Nhà (Home)</strong> ở thanh dưới cùng:</li>
+                        <li>Gạt công tắc kết nối ở trên cùng sang <strong>BẬT</strong> ➔ Hiện bảng xác nhận, bấm <strong>Kết nối</strong> (hiện biểu tượng VPN trên thanh trạng thái).</li>
+                        <li><strong>Vuốt tắt hẳn ứng dụng Locket từ danh sách đa nhiệm</strong> (không để app chạy ngầm), sau đó mở lại app Locket.</li>
+                        <li>Tài khoản của bạn đã được kích hoạt <strong>Locket Gold VIP 💛</strong> thành công!</li>
+                    </ul>
+                    <div class="pl-11">
+                        <div class="rounded-xl overflow-hidden border border-emerald-500/40 max-w-sm cursor-pointer hover:border-emerald-400 transition shadow-lg group relative" onclick="openImageModal('./assets/steps/step7_connect_vpn.jpg', 'Bước 7: Bật kết nối VPN và tận hưởng Locket Gold')">
+                            <img src="./assets/steps/step7_connect_vpn.jpg" alt="Bước 7: Bật kết nối VPN" class="w-full h-auto object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition text-emerald-300 font-bold text-xs gap-1.5">
+                                <i data-feather="zoom-in" class="w-4 h-4"></i> Phóng to ảnh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🛡️ Bước phụ: Chống thu hồi vĩnh viễn (Không cần bật VPN) -->
+        <section class="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl border-2 border-amber-500/40 space-y-4 bg-gradient-to-br from-amber-500/10 via-ocean-900/60 to-transparent" data-aos="fade-up">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">🛡️</span>
+                <div>
+                    <h3 class="text-xl font-display font-black text-white">Bước Phụ: Chống Thu Hồi Vĩnh Viễn (Không Cần Bật VPN)</h3>
+                    <p class="text-xs text-amber-300">Giữ Gold trọn đời mà không tốn pin điện thoại</p>
+                </div>
+            </div>
+            
+            <p class="text-xs text-gray-300 leading-relaxed">
+                Sau khi Locket đã lên Gold thành công, nếu bạn không muốn bật VPN Shadowrocket liên tục làm tốn pin:
+            </p>
+
+            <ol class="space-y-2 text-xs text-gray-300 list-decimal list-inside pl-2 font-medium">
+                <li>Bạn có thể <strong>tắt VPN Shadowrocket đi</strong>.</li>
+                <li>Mở trình duyệt Safari trên iPhone, bấm nút <strong>Tải Cấu Hình DNS Chống Thu Hồi</strong> ở bảng cài đặt nhanh hoặc mở file <code class="text-cyan-glow font-mono">locketlam.mobileconfig</code>.</li>
+                <li>Vào <strong>Cài đặt ➔ Đã tải về hồ sơ ➔ Cài đặt</strong>.</li>
+                <li>Vào <strong>Cài đặt ➔ Cài đặt chung ➔ VPN & Quản lý thiết bị ➔ DNS ➔ Chọn "Locket Gold DNS (LAMDev)"</strong>.</li>
+                <li>Bây giờ Locket Gold sẽ được giữ vĩnh viễn trên iPhone của bạn mà không cần bật VPN nữa!</li>
+            </ol>
+        </section>
+
+        <!-- ❓ Câu hỏi thường gặp (FAQ) Accordion -->
+        <section class="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl border border-cyan-500/25 space-y-4" data-aos="fade-up">
+            <h3 class="text-xl font-display font-black text-white flex items-center gap-2">
+                <span class="text-cyan-glow">❓</span> Câu Hỏi Thường Gặp (FAQ)
+            </h3>
+
+            <div class="space-y-3 text-xs">
+                <!-- Q1 -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800">
+                    <button class="w-full flex items-center justify-between text-left font-bold text-white text-sm" onclick="toggleFaq(1)">
+                        <span>1. Tôi đã làm theo hướng dẫn nhưng vào Locket vẫn chưa có Gold?</span>
+                        <i id="faq-icon-1" data-feather="chevron-down" class="w-4 h-4 text-cyan-glow transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden mt-3 pt-3 border-t border-gray-800/80 text-gray-300 space-y-1.5">
+                        <p>• Kiểm tra xem bạn đã bật tin cậy chứng chỉ ở <em>Cài đặt ➔ Cài đặt chung ➔ Giới thiệu ➔ Cài đặt tin cậy chứng nhận</em> chưa.</p>
+                        <p>• Đảm bảo đã vuốt tắt hẳn app Locket chạy ngầm trước khi mở lại.</p>
+                        <p>• Vào Cài đặt trong Locket bấm nút "Khôi phục gói mua" (Restore Purchase).</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800">
+                    <button class="w-full flex items-center justify-between text-left font-bold text-white text-sm" onclick="toggleFaq(2)">
+                        <span>2. Dùng DNS chống thu hồi này mạng có bị chậm hay lag không?</span>
+                        <i id="faq-icon-2" data-feather="chevron-down" class="w-4 h-4 text-cyan-glow transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-2" class="hidden mt-3 pt-3 border-t border-gray-800/80 text-gray-300 leading-relaxed">
+                        <p>Hoàn toàn không! Cấu hình sử dụng công nghệ <strong>Split DNS</strong>, chỉ định tuyến duy nhất các yêu cầu kiểm tra của Locket về server chống thu hồi của DalyMMO (ID: <code>992769</code>), còn toàn bộ mạng lướt web, Facebook, TikTok, YouTube... vẫn dùng 100% mạng gốc tốc độ cao.</p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="glass-card rounded-2xl p-4 border border-gray-800">
+                    <button class="w-full flex items-center justify-between text-left font-bold text-white text-sm" onclick="toggleFaq(3)">
+                        <span>3. Tôi có thể chia sẻ cho bạn bè dùng cùng không?</span>
+                        <i id="faq-icon-3" data-feather="chevron-down" class="w-4 h-4 text-cyan-glow transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-ans-3" class="hidden mt-3 pt-3 border-t border-gray-800/80 text-gray-300 leading-relaxed">
+                        <p>Có! Cấu hình này được tối ưu sẵn trên máy chủ NextDNS cá nhân của LAMDev, bạn có thể gửi link này cho bất kỳ ai sử dụng hoàn toàn miễn phí.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 👨‍💻 Thông tin phát triển & Footer -->
+        <footer class="text-center text-xs text-gray-400 py-8 space-y-3 border-t border-gray-800">
+            <div class="flex items-center justify-center flex-wrap gap-4 text-sm font-semibold">
+                <a href="https://dalymmo.com" target="_blank" class="text-cyan-glow hover:underline flex items-center gap-1.5">
+                    <i data-feather="globe" class="w-4 h-4"></i> dalymmo.com
+                </a>
+                <span class="text-gray-600">•</span>
+                <a href="https://t.me/dalymmocom" target="_blank" class="text-blue-400 hover:underline flex items-center gap-1.5">
+                    <i data-feather="send" class="w-4 h-4"></i> Telegram @dalymmocom
+                </a>
+                <span class="text-gray-600">•</span>
+                <a href="https://github.com/leanhminh2104/locketlam/tree/shadowrocket" target="_blank" class="text-gray-300 hover:text-white flex items-center gap-1.5">
+                    <i data-feather="github" class="w-4 h-4"></i> GitHub Repo
+                </a>
+            </div>
+            <p>Bản quyền & Phát triển bởi <strong class="text-white">LAMDev</strong>. Phát hành miễn phí cho cộng đồng người dùng iOS.</p>
+            <p class="text-[11px] text-gray-600">Nghiêm cấm mọi hành vi sao chép nhằm mục đích thương mại.</p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Back To Top Button -->
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 z-40 bg-ocean-800/90 hover:bg-cyan-500 hover:text-black text-cyan-300 p-3 rounded-2xl border border-cyan-500/40 shadow-xl opacity-0 pointer-events-none transition duration-300">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Interactive Scripts -->
     <script>
-        AOS.init({ once: true });
+        AOS.init({ once: true, duration: 600 });
         feather.replace();
 
+        // Copy to clipboard with toast notification
         function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(function() {
-                showToast("Đã sao chép liên kết!");
-            }).catch(function() {
-                var input = document.createElement("input");
-                input.value = text;
-                document.body.appendChild(input);
-                input.select();
-                document.execCommand("copy");
-                document.body.removeChild(input);
-                showToast("Đã sao chép liên kết!");
-            });
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function() {
+                    showToast("Đã sao chép liên kết vào bộ nhớ tạm!");
+                }).catch(function() {
+                    fallbackCopy(text);
+                });
+            } else {
+                fallbackCopy(text);
+            }
         }
 
+        function fallbackCopy(text) {
+            var input = document.createElement("input");
+            input.value = text;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+            showToast("Đã sao chép liên kết vào bộ nhớ tạm!");
+        }
+
+        // Toast controller
         function showToast(msg) {
             var toast = document.getElementById("toastContent");
             var msgEl = document.getElementById("toastMessage");
             msgEl.textContent = msg;
-            toast.classList.remove("opacity-0", "translate-y-2");
+            toast.classList.remove("opacity-0", "translate-y-3");
             toast.classList.add("opacity-100", "translate-y-0");
             setTimeout(function() {
                 toast.classList.remove("opacity-100", "translate-y-0");
-                toast.classList.add("opacity-0", "translate-y-2");
-            }, 2000);
+                toast.classList.add("opacity-0", "translate-y-3");
+            }, 2500);
         }
+
+        // Lightbox Modal Controller
+        function openImageModal(src, caption) {
+            var modal = document.getElementById("imageModal");
+            var img = document.getElementById("modalImg");
+            var cap = document.getElementById("modalCaption");
+            img.src = src;
+            cap.textContent = caption;
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            feather.replace();
+        }
+
+        function closeImageModal() {
+            var modal = document.getElementById("imageModal");
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+        }
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                closeImageModal();
+            }
+        });
+
+        // FAQ Toggle Controller
+        function toggleFaq(id) {
+            var ans = document.getElementById("faq-ans-" + id);
+            var icon = document.getElementById("faq-icon-" + id);
+            if (ans.classList.contains("hidden")) {
+                ans.classList.remove("hidden");
+                icon.style.transform = "rotate(180deg)";
+            } else {
+                ans.classList.add("hidden");
+                icon.style.transform = "rotate(0deg)";
+            }
+        }
+
+        // Back to top scroll button
+        window.addEventListener("scroll", function() {
+            var btn = document.getElementById("backToTop");
+            if (window.scrollY > 400) {
+                btn.classList.remove("opacity-0", "pointer-events-none");
+                btn.classList.add("opacity-100");
+            } else {
+                btn.classList.add("opacity-0", "pointer-events-none");
+                btn.classList.remove("opacity-100");
+            }
+        });
     </script>
 </body>
 </html>
