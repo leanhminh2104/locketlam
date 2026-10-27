@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
   <key>PayloadDisplayName</key>
-  <string>Locket Gold 💛 (LAMDev - DaLyMMO)</string>
+  <string>Locket Gold & Anti-Revoke VIP (LAMDev)</string>
 
   <key>PayloadDescription</key>
-  <string>Hồ sơ cấu hình NextDNS chuẩn Apple DoH bảo vệ Locket Gold và chống thu hồi chứng chỉ vĩnh viễn.&#10;🌐 Website: dalymmo.com&#10;🛠 Phát hành bởi LAMDev (NextDNS ID: 992769).</string>
+  <string>Hồ sơ cấu hình DoH bảo vệ Locket Gold vĩnh viễn và chống thu hồi chứng chỉ Apple (ESign, Scarlet, GBox, TrollStore, IPA doanh nghiệp).&#10;🌐 Website: dalymmo.com&#10;🛠 Phát hành bởi LAMDev (NextDNS ID: 992769).</string>
 
   <key>PayloadIdentifier</key>
   <string>com.dalymmo.locketlam.dns.992769.profile</string>
@@ -47,9 +47,34 @@
           <string>2a07:a8c1::99:2769</string>
         </array>
 
-        <!-- Split DNS: Chỉ định tuyến riêng các domain cần chặn để giữ Locket Gold và chống thu hồi chứng chỉ -->
+        <!-- Split DNS: Định tuyến riêng các domain cần chặn để giữ Locket Gold VÀ chống thu hồi chứng chỉ Apple -->
         <key>SupplementalMatchDomains</key>
         <array>
+          <!-- 1. CHỐNG THU HỒI CHỨNG CHỈ APPLE (ESign, Scarlet, GBox, TrollStore, IPA Doanh Nghiệp) -->
+          <string>ocsp.apple.com</string>
+          <string>ocsp.apple.com.edgekey.net</string>
+          <string>ocsp2.apple.com</string>
+          <string>ocsp2.apple.com.edgekey.net</string>
+          <string>ocsp-lb.apple.com.akadns.net</string>
+          <string>ocsp.digicert.com</string>
+          <string>ocsp.digicert.cn</string>
+          <string>valid.apple.com</string>
+          <string>valid.apple.com.akadns.net</string>
+          <string>valid.apple.com.edgekey.net</string>
+          <string>crl.apple.com</string>
+          <string>crl.apple.com.akadns.net</string>
+          <string>crl.apple.com.edgekey.net</string>
+          <string>crl.entrust.net</string>
+          <string>crl3.digicert.com</string>
+          <string>crl4.digicert.com</string>
+          <string>certs.apple.com</string>
+          <string>certs.apple.com.edgekey.net</string>
+          <string>ppq.apple.com</string>
+          <string>iadsdk.apple.com</string>
+          <string>khoindvn.com</string>
+          <string>vuvankhoi.com</string>
+
+          <!-- 2. CHỐNG THU HỒI LOCKET GOLD VIP (LAMDev) -->
           <string>api.revenuecat.com</string>
           <string>app.revenuecat.com</string>
           <string>in.appcenter.ms</string>
@@ -57,10 +82,6 @@
           <string>firebaselogging-pa.googleapis.com</string>
           <string>mixpanel.com</string>
           <string>api.mixpanel.com</string>
-          <string>ocsp.apple.com</string>
-          <string>ocsp2.apple.com</string>
-          <string>ppq.apple.com</string>
-          <string>iadsdk.apple.com</string>
         </array>
       </dict>
 
@@ -106,10 +127,10 @@
       <string>62F0D8E9-2182-4E38-9844-3B9B3BC03417</string>
 
       <key>PayloadDisplayName</key>
-      <string>NextDNS (992769 / locketlam)</string>
+      <string>NextDNS (992769 / Locket Gold & Anti-Revoke)</string>
 
       <key>PayloadDescription</key>
-      <string>Cấu hình DNS-over-HTTPS (DoH) bảo mật bảo vệ thiết bị và Locket Gold.</string>
+      <string>Cấu hình DNS-over-HTTPS (DoH) bảo vệ Locket Gold và chống thu hồi chứng chỉ Apple vĩnh viễn.</string>
 
       <key>PayloadOrganization</key>
       <string>LAMDev - dalymmo.com</string>
