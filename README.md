@@ -5,7 +5,7 @@
 # 💛 Locket Gold VIP - LAMDev
 
 > **Bộ công cụ chuyên biệt mở khóa Locket Gold VIP vĩnh viễn & Chống thu hồi**  
-> 🌐 Website: [dalymmo.com](https://dalymmo.com) | 📢 Kênh hỗ trợ: [Telegram @dalymmo](https://t.me/dalymmo)  
+> 🌐 Website: [dalymmo.com](https://dalymmo.com) | 📢 Kênh hỗ trợ: [Telegram @dalymmocom](https://t.me/dalymmocom)  
 > 📦 Repository: [leanhminh2104/locketlam](https://github.com/leanhminh2104/locketlam/tree/shadowrocket) | 🌿 Nhánh: `shadowrocket`
 
 ---
@@ -166,5 +166,5 @@ Có! Cấu hình này được tối ưu sẵn trên máy chủ NextDNS cá nhâ
 
 - **Bản quyền & Phát triển:** [LAMDev](https://dalymmo.com)
 - **Website chính thức:** [dalymmo.com](https://dalymmo.com)
-- **Kênh thông báo & Hỗ trợ:** [Telegram @dalymmo](https://t.me/dalymmo)
+- **Kênh thông báo & Hỗ trợ:** [Telegram @dalymmocom](https://t.me/dalymmocom)
 - **Giấy phép:** Được phát hành miễn phí cho cộng đồng người dùng iOS. Nghiêm cấm mọi hành vi sao chép nhằm mục đích thương mại.

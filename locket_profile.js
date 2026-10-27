@@ -1,7 +1,7 @@
 // ============================================================
 // Locket Profile & Badge Keeper - LAMDev
 // Website: https://dalymmo.com
-// Channel: https://t.me/dalymmo
+// Channel: https://t.me/dalymmocom
 // Chức năng: Giữ Huy hiệu Gold luôn BẬT vĩnh viễn không bị văng/mất
 // ============================================================
 

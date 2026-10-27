@@ -2,7 +2,7 @@
 // Locket Gold VIP - Ultimate Unlock
 // Developer: LAMDev
 // Website: https://dalymmo.com
-// Channel: https://t.me/dalymmo
+// Channel: https://t.me/dalymmocom
 // ============================================================
 
 const mapping = {
