@@ -69,8 +69,6 @@
 					<string>valid.apple.com.edgekey.net</string>
 					<string>ppq.apple.com</string>
 					<string>iadsdk.apple.com</string>
-					<string>khoindvn.com</string>
-					<string>vuvankhoi.com</string>
 
 					<!-- Chống thu hồi Locket Gold VIP (LAMDev) -->
 					<string>api.revenuecat.com</string>
