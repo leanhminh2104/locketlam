@@ -1,29 +1,24 @@
+#!url=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule
 #!name=Locket Gold VIP - LAMDev
 #!desc=Mở khóa Locket Gold VIP vĩnh viễn (RevenueCat + Firebase Remote Config). Phát hành bởi LAMDev (dalymmo.com).
 #!author=LAMDev
 #!homepage=https://dalymmo.com
 #!tgchannel=https://t.me/dalymmo
-#!moduleUrl=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule
 #!icon=https://raw.githubusercontent.com/leanhminh2104/shadowrocket/refs/heads/locketlam/assets/img/shadowrocket.webp
-#!howtouse=Shadowrocket
-
-[Header Rewrite]
-^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
-^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
 
 [Script]
 # Mở khóa gói Locket Gold qua RevenueCat
-Locket_RevenueCat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.js, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.js, requires-body=true, max-size=-1, timeout=60
 
-# Xóa ETag header để luôn nhận phản hồi mới
-Locket_DeleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/deleteHeader.js, timeout=60
+# Xóa ETag header để luôn nhận phản hồi mới từ RevenueCat
+deleteHeader = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/deleteHeader.js, timeout=60
 
-# Mở khóa toàn bộ Remote Config (huy hiệu, khung widget, icon, video dài, xem locket)
-Locket_RemoteConfig = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_remote.js, requires-body=true, max-size=-1, timeout=60
+# Mở khóa toàn bộ Remote Config (video 60s, ảnh 2K, icon VIP, khung widget, không quảng cáo)
+locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_remote.js, requires-body=true, max-size=-1, timeout=60
 
 # Giữ Huy hiệu Locket Gold luôn BẬT và lưu vĩnh viễn
-Locket_ChangeBadge = type=http-request, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/changeProfileInfo, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, timeout=60
-Locket_FetchUser = type=http-response, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/(fetchUser|fetchUsers|fetchUserV2), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, requires-body=true, max-size=-1, timeout=60
+locket_badge = type=http-request, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/changeProfileInfo, script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, timeout=60
+locket_user = type=http-response, pattern=^https:\/\/us-central1-locket-4252a\.cloudfunctions\.net\/(fetchUser|fetchUsers|fetchUserV2), script-path=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locket_profile.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, firebaseremoteconfig.googleapis.com, us-central1-locket-4252a.cloudfunctions.net
+hostname = %APPEND% api.revenuecat.com, api.rc-backup.com, firebaseremoteconfig.googleapis.com, us-central1-locket-4252a.cloudfunctions.net

@@ -45,7 +45,7 @@ if (ua.includes("Locket")) {
             after_sent_moment: false,
             on_foreground: false,
             interval: 2592000,
-            profile_banner: true
+            profile_banner: false
         }),
         feature_discovery_popup_config: JSON.stringify({
             tag: "LOCKET GOLD",
