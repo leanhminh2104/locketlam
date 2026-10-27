@@ -47,12 +47,12 @@ Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện 
 
 ---
 
-### 📥 Tải Trực Tiếp File Về Máy:
+### 🛡️ Tải Hồ Sơ DNS Chống Thu Hồi Về iPhone:
 
-* 📥 **Tải File Cấu hình Shadowrocket (.conf):**  
-  [👉 Bấm vào đây để tải locketlam.conf](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf)
-* 🛡️ **Tải Hồ sơ DNS Chống Thu Hồi (.mobileconfig):**  
-  [👉 Bấm vào đây để tải locketlam.mobileconfig](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig)
+> 💡 **Cách dùng:** Bấm vào liên kết bên dưới bằng trình duyệt **Safari** trên iPhone. Hệ thống sẽ tự động tải về file cấu hình `.mobileconfig` và hiện thông báo **"Đã tải về hồ sơ"**. Sau đó bạn chỉ cần vào **Cài đặt ➔ Đã tải về hồ sơ ➔ Cài đặt** là xong!
+
+* 📲 **Tải Profile DNS Tự Động (.mobileconfig):**  
+  [👉 Bấm vào đây để tải locketlam.mobileconfig về iPhone](https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig)
 
 ---
 
@@ -62,8 +62,7 @@ Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện 
 | :--- | :--- | :--- |
 | **Module Locket (.sgmodule)** | [⚡ Cài đặt Module](shadowrocket://install?module=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule` |
 | **Config Locket (.conf)** | [🚀 Thêm Config](shadowrocket://config/add/https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf` |
-| **File Cấu hình (.conf)** | [📥 Tải file .conf](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.conf` |
-| **Hồ sơ DNS (.mobileconfig)** | [🛡️ Tải file .mobileconfig](https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig) | `https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.mobileconfig` |
+| **Hồ sơ DNS (.mobileconfig)** | [🛡️ Tải Profile DNS](https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig) | `https://cdn.jsdelivr.net/gh/leanhminh2104/locketlam@shadowrocket/locketlam.mobileconfig` |
 
 ---
 
