@@ -167,6 +167,7 @@ Có! Cấu hình này được tối ưu sẵn trên máy chủ NextDNS cá nhâ
 ## 👨‍💻 Thông tin phát triển
 
 - **Bản quyền & Phát triển:** [LAMDev](https://dalymmo.com)
+- **Mã Nguồn Gốc:** [duyvinh09](https://github.com/duyvinh09/Module_IOS/)
 - **Website chính thức:** [dalymmo.com](https://dalymmo.com)
 - **Kênh thông báo & Hỗ trợ:** [Telegram @dalymmocom](https://t.me/dalymmocom)
 - **Giấy phép:** Được phát hành miễn phí cho cộng đồng người dùng iOS. Nghiêm cấm mọi hành vi sao chép nhằm mục đích thương mại.
