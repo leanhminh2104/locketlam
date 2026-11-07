@@ -2,19 +2,20 @@
   <img src="./assets/banner.png" alt="Nâng Locket Gold bằng Shadowrocket - LAMDev" width="100%">
 </p>
 
-# 💛 Locket Gold VIP - LAMDev
+# 💛 Gói Locket Free VIP - LAMDev x DaLyMMO.com
 
-> **Bộ công cụ chuyên biệt mở khóa Locket Gold VIP vĩnh viễn & Chống thu hồi**  
-> 🌐 Website: [dalymmo.com](https://dalymmo.com) | 📢 Kênh hỗ trợ: [Telegram @dalymmocom](https://t.me/dalymmocom)  
+> **Gói Locket Free mở khóa Locket Gold VIP vĩnh viễn & Chống thu hồi chứng chỉ Apple**  
+> 🌐 Website: [DaLyMMO.com](https://dalymmo.com) | 📢 Kênh hỗ trợ: [Telegram @dalymmocom](https://t.me/dalymmocom)  
+> 🛠 Phát hành bởi: **LAMDev x DaLyMMO.com**  
 > 📦 Repository: [leanhminh2104/locketlam](https://github.com/leanhminh2104/locketlam/tree/shadowrocket) | 🌿 Nhánh: `shadowrocket`
 
 ---
 
 ## 🌟 Giới thiệu
 
-**LocketLAM** là bộ giải pháp mở khóa Locket Gold chuyên nghiệp do **LAMDev** phát triển, tinh gọn **100% dành riêng cho ứng dụng Locket**, loại bỏ toàn bộ các thành phần dư thừa của các ứng dụng khác giúp hệ thống hoạt động nhẹ nhất, mượt nhất và ổn định nhất.
+**LocketLAM** là bộ giải pháp mở khóa gói Locket Free chuyên nghiệp do **LAMDev x DaLyMMO.com** phát triển, tinh gọn **100% dành riêng cho ứng dụng Locket**, loại bỏ toàn bộ các thành phần dư thừa của các ứng dụng khác giúp hệ thống hoạt động nhẹ nhất, mượt nhất và ổn định nhất.
 
-Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện từ giao diện, camera, dung lượng bộ nhớ cho tới các quyền hạn cao cấp trên hệ thống. Kèm theo đó là giải pháp **DNS Chống thu hồi độc quyền từ DalyMMO** giúp bạn giữ trạng thái Gold vĩnh viễn mà không cần phải bật VPN liên tục.
+Mọi tính năng VIP của Locket Gold đều được mở khóa toàn diện từ giao diện, camera, dung lượng bộ nhớ cho tới các quyền hạn cao cấp trên hệ thống. Kèm theo đó là giải pháp **Máy chủ DNS DoH Chống thu hồi riêng biệt từ DaLyMMO** không giới hạn lượt truy vấn, giúp bạn giữ trạng thái Gold vĩnh viễn mà không cần phải bật VPN liên tục.
 
 ---
 
@@ -154,20 +155,20 @@ Sau khi Locket đã lên Gold thành công, nếu bạn không muốn bật VPN 
 
 <details>
 <summary><b>2. Dùng DNS chống thu hồi này mạng có bị chậm hay lag không?</b></summary>
-Hoàn toàn không! Cấu hình sử dụng công nghệ <b>Split DNS</b>, chỉ định tuyến duy nhất các yêu cầu kiểm tra của Locket về server chống thu hồi của DalyMMO (ID: <code>992769</code>), còn toàn bộ mạng lướt web, Facebook, TikTok, YouTube... vẫn dùng 100% mạng gốc tốc độ cao.
+Hoàn toàn không! Cấu hình sử dụng công nghệ <b>Split DNS</b>, chỉ định tuyến duy nhất các yêu cầu kiểm tra của Locket về máy chủ DoH riêng do <b>LAMDev x DaLyMMO.com</b> vận hành, không bị giới hạn 300.000 lượt truy vấn, không lag, còn toàn bộ mạng lướt web, Facebook, TikTok, YouTube... vẫn dùng 100% mạng gốc tốc độ cao.
 </details>
 
 <details>
 <summary><b>3. Tôi có thể chia sẻ cho bạn bè dùng cùng không?</b></summary>
-Có! Cấu hình này được tối ưu sẵn trên máy chủ NextDNS cá nhân của LAMDev, bạn có thể gửi link này cho bất kỳ ai sử dụng hoàn toàn miễn phí.
+Có! Gói Locket Free này được cấu hình trên máy chủ DoH riêng của LAMDev x DaLyMMO.com (chuẩn RFC 8484) không giới hạn số lượng truy vấn, bạn có thể gửi link này cho bất kỳ ai sử dụng hoàn toàn miễn phí.
 </details>
 
 ---
 
 ## 👨‍💻 Thông tin phát triển
 
-- **Bản quyền & Phát triển:** [LAMDev](https://dalymmo.com)
+- **Bản quyền & Phát triển:** Gói Locket Free do [LAMDev x DaLyMMO.com](https://dalymmo.com) phát hành
 - **Mã Nguồn Gốc:** [duyvinh09](https://github.com/duyvinh09/Module_IOS/)
-- **Website chính thức:** [dalymmo.com](https://dalymmo.com)
+- **Website chính thức:** [DaLyMMO.com](https://dalymmo.com)
 - **Kênh thông báo & Hỗ trợ:** [Telegram @dalymmocom](https://t.me/dalymmocom)
 - **Giấy phép:** Được phát hành miễn phí cho cộng đồng người dùng iOS. Nghiêm cấm mọi hành vi sao chép nhằm mục đích thương mại.

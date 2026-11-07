@@ -1,0 +1,19 @@
+# Gói Locket Free do LAMDev x DaLyMMO.com phát hành
+# Cấu hình định tuyến máy chủ DoH (RFC 8484)
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /locketlam/dns/shadowrocket/free/
+
+    # Cho phép chuyển toàn bộ request POST/GET đến index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Accept, X-Requested-With"
+</IfModule>
+
