@@ -3,6 +3,8 @@
 /locket_profile.js
 /deleteHeader.js
 /locket_remote.js
+shadowrocket_src/
+locketlam_shadowrocket_obf/
 *.xml
 locketlam.xml
 locketlam/locketlam.xml

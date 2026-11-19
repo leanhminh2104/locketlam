@@ -1,8 +1,10 @@
 #!url=https://raw.githubusercontent.com/leanhminh2104/locketlam/refs/heads/shadowrocket/locketlam.sgmodule
-#!name=Locket Gold VIP - LAMDev
-#!desc=Mở khóa Locket Gold VIP vĩnh viễn (RevenueCat + Firebase Remote Config). Phát hành bởi LAMDev (dalymmo.com).
-#!author=LAMDev
+#!name=Locket Gold
+#!desc=Mở khóa Locket Gold. Phát hành bởi LAMDev x duyvinh09
+#!author=LAMDev x duyvinh09
+#!upstream=https://github.com/duyvinh09/Module_IOS
 #!homepage=https://dalymmo.com
+#!homeprofileduyvinh09=https://duyvinh09.io.vn
 #!tgchannel=https://t.me/dalymmocom
 #!icon=https://raw.githubusercontent.com/leanhminh2104/shadowrocket/refs/heads/locketlam/assets/img/shadowrocket.webp
 

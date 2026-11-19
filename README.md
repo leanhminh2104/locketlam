@@ -7,7 +7,8 @@
 > **Gói Locket Free mở khóa Locket Gold VIP vĩnh viễn & Chống thu hồi chứng chỉ Apple**  
 > 🌐 Website: [DaLyMMO.com](https://dalymmo.com) | 📢 Kênh hỗ trợ: [Telegram @dalymmocom](https://t.me/dalymmocom)  
 > 🛠 Phát hành bởi: **LAMDev x DaLyMMO.com**  
-> 📦 Repository: [leanhminh2104/locketlam](https://github.com/leanhminh2104/locketlam/tree/shadowrocket) | 🌿 Nhánh: `shadowrocket`
+> 📦 Repository: [leanhminh2104/locketlam](https://github.com/leanhminh2104/locketlam/tree/shadowrocket) | 🌿 Nhánh: `shadowrocket`  
+> 💡 Mã nguồn gốc: [duyvinh09/Module_IOS](https://github.com/duyvinh09/Module_IOS)
 
 ---
 
@@ -165,10 +166,10 @@ Có! Gói Locket Free này được cấu hình trên máy chủ DoH riêng củ
 
 ---
 
-## 👨‍💻 Thông tin phát triển
+## 👨‍💻 Thông tin phát triển & Ghi công
 
-- **Bản quyền & Phát triển:** Gói Locket Free do [LAMDev x DaLyMMO.com](https://dalymmo.com) phát hành
-- **Mã Nguồn Gốc:** [duyvinh09](https://github.com/duyvinh09/Module_IOS/)
+- **Phát triển & Tối ưu:** Gói Locket Free do [LAMDev x DaLyMMO.com](https://dalymmo.com) phát hành
+- **Mã nguồn gốc (Credits):** Phát triển dựa trên dự án [duyvinh09/Module_IOS](https://github.com/duyvinh09/Module_IOS) của tác giả [duyvinh09](https://duyvinh09.io.vn)
 - **Website chính thức:** [DaLyMMO.com](https://dalymmo.com)
 - **Kênh thông báo & Hỗ trợ:** [Telegram @dalymmocom](https://t.me/dalymmocom)
 - **Giấy phép:** Được phát hành miễn phí cho cộng đồng người dùng iOS. Nghiêm cấm mọi hành vi sao chép nhằm mục đích thương mại.
